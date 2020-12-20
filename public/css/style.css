@@ -1,0 +1,15 @@
+.team-reg, .leader-reg
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.leader-reg
+{
+    margin-top: 2em;
+}
+
+.reg-form input
+{
+    padding: 1em;
+}

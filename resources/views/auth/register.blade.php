@@ -16,7 +16,7 @@
       <!-- team -->
       <div class="flex justify-center">
 
-      <form action="{{route('register')}}" class="team-reg border flex flex-col w-60" method="POST">
+      <form action="{{route('register')}}" class="team-reg border flex flex-col w-60" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="flex flex-col">
         <input
@@ -125,18 +125,19 @@
             required
           />
           </div>
-         
-          <label for="card" class="flex justify-center">Upload </label>
+         <br>
+          <label for="card" class="flex justify-center">Upload</label>
           <div id="choose">ID Card</div>
-          <input
+          <div><input
             type="file"
             id="card"
             name="card"
             accept="image/png, image/jpeg, image/jpg, image/pdf"
             class="idCard"
-          />
+          /></div>
+          <br>
           <label for="idcard" id="cv" class="">Upload CV</label>
-          <input type="file" id="cv" name="cv" accept="image/png, image/jpeg, image/jpg, image/pdf">
+          <div><input type="file" id="cv" name="cv" accept="image/png, image/jpeg, image/jpg, image/pdf"></div>
          <button type="submit" class="btn btn-primary border">Register</button>
         </form>
     </div>

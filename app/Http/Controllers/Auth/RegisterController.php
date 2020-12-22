@@ -51,13 +51,13 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'team_name' => ['required', 'string', 'max:255', 'unique:users'],
-            'email_leader' => ['required', 'string', 'email', 'max:255'],
+            'email_leader' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'full_name' => ['required'],
-            'wa_num' => ['required'],
-            'line_id' => ['required'],
-            'github' => ['required'],
-            'birth_place' => ['required'],
+            'full_name' => ['required', 'string'],
+            'wa_num' => ['required', 'string','min:9', 'unique:user'],
+            'line_id' => ['required', 'string', 'unique:user'],
+            'github' => ['required', 'string'],
+            'birth_place' => ['required', 'string'],
             'birth_day' => ['required'], 
         ]);
     }
@@ -70,6 +70,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $request = request();
+
+        $card = $request->file('card');
+        $cardName = time() . Auth::id() . "-profile." . $card->getClientOriginalExtension();
+
+        $upload_card = 'profile_images/';
+        $profile_image_url = $upload_path . $profileImageSaveAsName;
+        $success = $profileImage->move($upload_path, $profileImageSaveAsName);
+
+        $request = request();
+
+        $profileImage = $request->file('cv');
+        $profileImageSaveAsName = time() . Auth::id() . "-profile." . $profileImage->getClientOriginalExtension();
+
+        $upload_path = 'profile_images/';
+        $profile_image_url = $upload_path . $profileImageSaveAsName;
+        $success = $profileImage->move($upload_path, $profileImageSaveAsName);
+
         return User::create([
             'team_name' => $data['team_name'],
             'email_leader' => $data['email_leader'],
@@ -81,5 +99,5 @@ class RegisterController extends Controller
             'birth_place' => $data['birth_place'],
             'birth_day' => $data['birth_day']
         ]);
-    }
+    }   
 }

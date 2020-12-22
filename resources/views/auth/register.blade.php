@@ -1,206 +1,157 @@
-@extends('layouts.app')
-
-@section('content')
-{{-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Register</title>
   </head>
-  <body>
-    <div class="reg-form">
+  <body class="bg-indigo-900 text-gray-100">
+    <div class="reg-form p-8">
+      <h1 class="flex justify-center">Register</h1>
+      <h1 class="flex justify-center">Team Name</h1>
       <!-- team -->
-      <form method="POST" action="{{ route('register') }}">
+      <div class="flex justify-center">
+
+      <form action="{{route('register')}}" class="team-reg border flex flex-col w-60" method="POST">
         @csrf
-    
-      <form action="#" class="team-reg" >
-        
+        <div class="flex flex-col">
         <input
           type="text"
-          id="team-name"
+          id="team_name"
           placeholder="Team Name"
-          id="team-name"
+          name="team_name"
           required
         />
         <input
           type="password"
           id="password"
           placeholder="password"
-          id="password"
+          name="password"
           required
         />
         <input
           type="password"
-          id="confirm-password"
+          id="password_confirmation"
           placeholder="Confirm Password"
-          id="confirm-password"
+          name="password_confirmation"
           required
         />
-      </form>
+        </div>
+      </div>
+      
+      <div class="flex flex-row justify-center w-50">
       <input
         type="radio"
-        name="binusian"
         id="binusian"
-        name="binusian"
+        name="status"
         value="binusian"
+        id="choose"
+        onclick="myFunction()"
+        class="mt-1.5 mr-1.5"
       />
       <label for="binusian">Binusian</label>
       <input
         type="radio"
-        name="non-binusian"
         id="non-binusian"
-        name="non-binusian"
+        name="status"
         value="non-binusian"
+        id="choose"
+        onclick="myFunction()"
+        class="mt-1.5 mr-1.5 ml-10"
       />
       <label for="non-binusian">Non Binusian</label>
+      </div>
       <!-- team -->
       <!-- leader -->
-      <form action="#" class="leader-reg">
-        <input
-          type="text"
-          name="full-name"
-          id="full-name"
-          placeholder="Full Name"
-          required
-        />
-        <input
-          type="email"
-          name="email-leader"
-          id="email-leader"
-          placeholder="Email"
-          required
-        />
-        <input
-          type="number"
-          name="wa-num"
-          id="wa-num"
-          placeholder="Whatsapp Number"
-          required
-        />
-        <input
-          type="text"
-          name="line-id"
-          id="line-id"
-          placeholder="LINE ID"
-          required
-        />
-        <input
-          type="text"
-          name="gitID"
-          id="gitID"
-          placeholder="Github/Gitlab ID"
-          required
-        />
-        <input
-          type="text"
-          name="birthplace"
-          id="birthplace"
-          placeholder="Birth Place"
-          required
-        />
-        <input
-          type="date"
-          name="birthday"
-          id="birthday"
-          placeholder="dd/mm/yyyy"
-          required
-        />
-        <!-- leader -->
-        <!-- upload id n cv -->
-        <label for="cv">Upload CV</label>
-        <input
-          type="file"
-          id="cv"
-          name="cv"
-          accept="image/png, image/jpeg, image/jpg, image/pdf"
-        />
-        
-      </form>
-      <div class="form-group row mb-0">
-        <div class="col-md-6 offset-md-4">
-            <button type="submit" class="btn btn-primary">
-                {{ __('Register') }}
-            </button>
-        </div>
+      <div>
+        <h1 class="flex justify-center pt-4">Leader</h1>
       </div>
-    </form>
+      <div class="flex justify-center">
+
+        <div class="flex justify-center w-40 p-8 pt-2">
+        
+          <input
+            type="text"
+            name="full_name"
+            id="full_name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email_leader"
+            id="email_leader"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            name="wa_num"
+            id="wa_num"
+            placeholder="Whatsapp Number"
+            required
+          />
+          <input
+            type="text"
+            name="line_id"
+            id="line_id"
+            placeholder="LINE ID"
+            required
+          />
+          <input
+            type="text"
+            name="github"
+            id="github"
+            placeholder="Github/Gitlab ID"
+            required
+          />
+          <input
+            type="text"
+            name="birth_place"
+            id="birth_place"
+            placeholder="Birth Place"
+            required
+          />
+          <div>
+          <input
+            type="date"
+            name="birth_day"
+            id="dob"
+            placeholder="dd/mm/yyyy"
+            required
+          />
+          </div>
+         
+          <label for="card" class="flex justify-center">Upload </label>
+          <div id="choose">ID Card</div>
+          <input
+            type="file"
+            id="card"
+            name="card"
+            accept="image/png, image/jpeg, image/jpg, image/pdf"
+            class="idCard"
+          />
+          <label for="idcard" id="cv" class="">Upload CV</label>
+          <input type="file" id="cv" name="cv" accept="image/png, image/jpeg, image/jpg, image/pdf">
+         <button type="submit" class="btn btn-primary border">Register</button>
+        </form>
     </div>
     </div>
+    <script>
+      function myFunction() {
+          var x = document.getElementById("choose");
+              if (x.innerHTML === "ID Card") {
+                    x.innerHTML = "FLAZZ CARD";
+                    document.getElementById("card").className = "idCard";
+            } else {
+                    x.innerHTML = "ID Card";
+                    document.getElementById("card").className = "flazz";
+            }
+      }
+    </script>
   </body>
 </html>
-@endsection

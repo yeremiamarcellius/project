@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -36,5 +36,19 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+    public function login(Request $request){
+        $this->validate($request, [
+            'team_name' => 'required|string',
+            'password' => 'required',
+        ]);
+        $login =  [
+            'team_name' => $request->team_name,
+            'password' => $request->password
+        ];
+        if(auth()->attempt($login)){
+            return redirect()->route('home');
+        }
+        return redirect()->route('login')->with(['error' => 'Email/Password Incorrect' ]);
     }
 }

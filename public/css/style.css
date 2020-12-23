@@ -1,15 +1,32 @@
-.team-reg, .leader-reg
-{
+html  {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-login{
+    background-image: url("/images/loginpage.png");
+    background-size: cover;
+}
+
+.border-gradient{
+    border-image-source: linear-gradient(to bottom, #3B82F6, #4338CA);
+    border-image-slice: 1;
+}
+/* Register */
+.team-reg, .leader-reg {
     display: flex;
     flex-direction: column;
 }
 
-.leader-reg
-{
+.leader-reg {
     margin-top: 2em;
 }
 
-.reg-form input
-{
+.reg-form input {
     padding: 1em;
 }

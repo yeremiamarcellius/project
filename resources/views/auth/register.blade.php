@@ -15,7 +15,7 @@
     />
     <title>Register</title>
   </head>
-  <body class="bg-black text-gray-100">
+  <body class="text-gray-100 bg-register">
     <div class="p-4">
       <nav class="bg-none fixed top-0 w-screen">
         <div class="container mx-auto">
@@ -23,7 +23,7 @@
             <!-- Left Side -->
             <a href="#" class="p-3"
               ><img
-                src="../photos/ehackathon_logo_1.png"
+                src="/images/ehackathon_logo_1.png"
                 alt="logo-brand.jpg"
                 height="   75px"
                 width="75px"
@@ -55,7 +55,7 @@
               </li>
               <li class="sm:inline-block">
                 <a
-                  href="#login-section"
+                  href="{{route('login')}}"
                   class="my-2 px-3 py-1 hover:text-indigo-600 rounded-md border-2 border-gradient"
                   >Login</a
                 >
@@ -95,7 +95,7 @@
             </button>
           </div>
           <!-- button buat switch -->
-          <form action="{{route('register')}}" class="p-10 pt-0" name="form-register" method="POST">
+          <form action="{{route('register')}}" class="p-10 pt-0" name="form-register" enctype = "multipart/form-data" method="POST">
             @csrf
             <div class="space-y-3">
               <div id="team" style="display: block">

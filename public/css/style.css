@@ -13,6 +13,11 @@ body {
     background-size: cover;
 }
 
+.bg-register{
+    background-image: url("/images/loginpage.png");
+    background-size: cover;
+}
+
 .border-gradient{
     border-image-source: linear-gradient(to bottom, #3B82F6, #4338CA);
     border-image-slice: 1;

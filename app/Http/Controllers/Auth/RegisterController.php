@@ -70,6 +70,26 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $request = request();
+        if($request->hasFile('card')){
+            $fileNameWithExt = $request->file('card')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('card')->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'_'.'.'.$extension;
+            $path = $request->file('card')->storeAs('card', $fileNameToStore);
+        }else{
+            $fileNameToStore = 'no-image.jpg';
+        }
+
+        if($request->hasFile('cv')){
+            $fileNameWithExtcv = $request->file('cv')->getClientOriginalName();
+            $fileNamecv = pathinfo($fileNameWithExtcv, PATHINFO_FILENAME);
+            $extensioncv = $request->file('cv')->getClientOriginalExtension();
+            $fileNameToStorecv = $fileNamecv.'_'.time().'_'.'.'.$extensioncv;
+            $pathcv = $request->file('cv')->storeAs('cv', $fileNameToStorecv);
+        }else{
+            $fileNameToStorecv = 'no-image.jpg';
+        }
 
         return User::create([
             'team_name' => $data['team_name'],
@@ -82,6 +102,8 @@ class RegisterController extends Controller
             'birth_place' => $data['birth_place'],
             'birth_day' => $data['birth_day'],
             'type' => $data['status'],
+            'card' => $fileNameToStore,
+            'cv' => $fileNameToStorecv,
         ]);
     }   
 }

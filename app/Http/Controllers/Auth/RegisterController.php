@@ -54,8 +54,8 @@ class RegisterController extends Controller
             'email_leader' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'full_name' => ['required', 'string'],
-            'wa_num' => ['required', 'string','min:9', 'unique:user'],
-            'line_id' => ['required', 'string', 'unique:user'],
+            'wa_num' => ['required', 'string','min:9', 'unique:users'],
+            'line_id' => ['required', 'string', 'unique:users'],
             'github' => ['required', 'string'],
             'birth_place' => ['required', 'string'],
             'birth_day' => ['required'], 
@@ -70,23 +70,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $request = request();
-
-        $card = $request->file('card');
-        $cardName = time() . Auth::id() . "-profile." . $card->getClientOriginalExtension();
-
-        $upload_card = 'profile_images/';
-        $profile_image_url = $upload_path . $profileImageSaveAsName;
-        $success = $profileImage->move($upload_path, $profileImageSaveAsName);
-
-        $request = request();
-
-        $profileImage = $request->file('cv');
-        $profileImageSaveAsName = time() . Auth::id() . "-profile." . $profileImage->getClientOriginalExtension();
-
-        $upload_path = 'profile_images/';
-        $profile_image_url = $upload_path . $profileImageSaveAsName;
-        $success = $profileImage->move($upload_path, $profileImageSaveAsName);
 
         return User::create([
             'team_name' => $data['team_name'],
@@ -97,7 +80,8 @@ class RegisterController extends Controller
             'line_id' => $data['line_id'],
             'github' => $data['github'],
             'birth_place' => $data['birth_place'],
-            'birth_day' => $data['birth_day']
+            'birth_day' => $data['birth_day'],
+            'type' => $data['status'],
         ]);
     }   
 }

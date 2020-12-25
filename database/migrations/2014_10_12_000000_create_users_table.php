@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->date('birth_day');
             $table->string('card')->nullable();
             $table->string('cv')->nullable();
-            $table->string('type')->nullable();
+            $table->string('type');
             $table->rememberToken();
             $table->timestamps();
         });

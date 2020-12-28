@@ -17,7 +17,7 @@
         <div class="container mx-auto">
             <div class="sm:flex justify-between mx-10">
                 <!-- Left Side -->
-                <a href="#" class="transform hover:scale-110 motion-reduce:transform-none p-3"><img src="../technoscape-tpm/photos/ehackathon_logo_1.png" alt="logo-brand.jpg" height="   75px" width="75px"></a>
+                <a href="#" class="transform hover:scale-110 motion-reduce:transform-none p-3"><img src="/images/ehackathon_logo_1.png" alt="logo-brand.jpg" height="   75px" width="75px"></a>
                 <!-- Right Side -->
                 <ul class="text-white sm:self-center text-xl sm:border-none">
                     <li class="sm:inline-block"><a href="#home-section" class="p-3 hover:text-red-500">Home</a></li>
@@ -25,7 +25,7 @@
                     <li class="sm:inline-block"><a href="#aboutus-section" class="p-3 hover:text-red-500">About Us</a></li>
                     <li class="sm:inline-block"><a href="#faq-section" class="p-3 hover:text-red-500">FaQ</a></li>
                     <li class="sm:inline-block"><a href="#timeline-section" class="p-3 hover:text-red-500">Timeline</a></li>
-                    <li class="sm:inline-block"><a href="../technoscape-tpm/pages/login.html" class="my-2 px-3 py-1 hover:text-red-500 rounded-md border-2 border-gradient">Login</a></li>
+                    <li class="sm:inline-block"><a href="{{route('login')}}" class="my-2 px-3 py-1 hover:text-red-500 rounded-md border-2 border-gradient">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +35,7 @@
         <div class="container mx-auto">
             <div class="flex justify-between mx-10">
                 <!-- Left Side -->
-                <a href="#" class="transform hover:scale-110 motion-reduce:transform-none p-3"><img src="images/ehackathon_logo_1.png" alt="logo-brand.jpg" height="75px" width="75px"></a>
+                <a href="#" class="transform hover:scale-110 motion-reduce:transform-none p-3"><img src="/images/ehackathon_logo_1.png" alt="logo-brand.jpg" height="75px" width="75px"></a>
                 <!-- Right Side -->
                 <button type="button" class="m-0" id="options-menu" aria-haspopup="true" aria-expanded="true" onclick="show()"><svg viewBox="0 0 448 512" width="20" title="align-right" fill="gray" ><path d="M16 224h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm416 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm3.17-384H172.83A12.82 12.82 0 0 0 160 44.83v38.34A12.82 12.82 0 0 0 172.83 96h262.34A12.82 12.82 0 0 0 448 83.17V44.83A12.82 12.82 0 0 0 435.17 32zm0 256H172.83A12.82 12.82 0 0 0 160 300.83v38.34A12.82 12.82 0 0 0 172.83 352h262.34A12.82 12.82 0 0 0 448 339.17v-38.34A12.82 12.82 0 0 0 435.17 288z" /></svg></button>
             </div>
@@ -45,7 +45,7 @@
                 <li class="inline-block w-full flex justify-center"><a href="#aboutus-section" class="text-center p-3 hover:text-red-500">About Us</a></li>
                 <li class="inline-block w-full flex justify-center"><a href="#faq-section" class="text-center p-3 hover:text-red-500">FaQ</a></li>
                 <li class="inline-block w-full flex justify-center"><a href="#timeline-section" class="text-center p-3 hover:text-red-500">Timeline</a></li>
-                <li class="inline-block w-full flex justify-center"><a href="{{route('login')}}" class="my-2 px-3 py-1 hover:text-red-500 bg-black bg-opacity-50 rounded-md border-2 border-gradient">Login</a></li>
+                <li class="inline-block w-full flex justify-center"><a href="../technoscape-tpm/pages/login.html" class="my-2 px-3 py-1 hover:text-red-500 bg-black bg-opacity-50 rounded-md border-2 border-gradient">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -63,15 +63,15 @@
                     <div class="multiple-items3 flex flex-row justify-evenly mx-auto w-full my-8">
                         <div>
                             <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon-1</p>
-                            <img src="../technoscape-tpm/photos/Hackathon-1.0.jpg" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
+                            <img src="/images/Hackathon-1.0.jpg" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
                         </div>
                         <div>
                             <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon-2</p>
-                            <img src="../technoscape-tpm/photos/Hackathon-2.0.jpg" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
+                            <img src="/images/Hackathon-2.0.jpg" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
                         </div>
                         <div>
                             <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon-3</p>
-                            <img src="../technoscape-tpm/photos/Hackathon-3.0.png" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
+                            <img src="/images/Hackathon-3.0.png" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
                         </div>
                     </div>
                 </div>
@@ -83,9 +83,9 @@
         <h1 class="text-white text-center mb-8 text-4xl sm:text-6xl tracking-widest font-bold">Champion</h1>
         <div class="w-full sm:w-full lg:w-2/3 h-2/3 flex flex-col items-center justify-center">
             <div class="flex flex-col w-full sm:flex-row items-center justify-center md:justify-around">
-                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="../technoscape-tpm/photos/svgs/first.svg" alt="first.svg"></div>
-                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="../technoscape-tpm/photos/svgs/second.svg" alt="second.svg"></div>
-                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="../technoscape-tpm/photos/svgs/third.svg" alt="third.svg"></div>
+                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/first.svg" alt="first.svg"></div>
+                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/second.svg" alt="second.svg"></div>
+                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/third.svg" alt="third.svg"></div>
             </div>
         </div>
     </section>
@@ -100,7 +100,7 @@
                 <div class="flex flex-col sm:flex-row justify-evenly">
                     <div class="flex flex-col">
                         <p class="py-3 sm:py-6 text-white font-semibold text-2xl">Register Here!</p>
-                        <div class="transform hover:scale-110 motion-reduce:transform-none bg-orange h-16 md:h-20 rounded-md text-white text-center text-xl md:text-2xl w-56 md:w-64 font-bold flex flex-col justify-center"><a href="../technoscape-tpm/pages/register.html">Register</a></div>
+                        <div class="transform hover:scale-110 motion-reduce:transform-none bg-orange h-16 md:h-20 rounded-md text-white text-center text-xl md:text-2xl w-56 md:w-64 font-bold flex flex-col justify-center"><a href="{{route('register')}}">Register</a></div>
                     </div>
                     <div class="flex flex-col font-semibold text-2xl">
                         <p class="py-3 sm:py-6 text-white">Download guide book</p>
@@ -209,22 +209,28 @@
         <div class="w-full sm:w-full lg:w-2/3 h-2/3 flex flex-col items-center justify-center">
             <div class="flex flex-col items-center sm:flex-row w-full my-8">
                 <div class="w-4/5 sm:w-1/2">
-                    <img src="../technoscape-tpm/photos/svgs/network-text.svg" alt="wjslogo.svg" id="wjs1" class="justify-self-center" style="display: flex;">
-                    <img src="../technoscape-tpm/photos/svgs/job-text.svg" alt="wjs2" id="wjs2" class="justify-self-center" style="display: none;">
-                    <img src="../technoscape-tpm/photos/svgs/mentoring-text.svg" alt="wjs2" id="wjs3" class="justify-self-center" style="display: none;">
+                    <img src="/images/svgs/network-text.svg" alt="wjslogo.svg" id="wjs1" class="justify-self-center" style="display: flex;">
+                    <img src="/images/svgs/job-text.svg" alt="wjs2" id="wjs2" class="justify-self-center" style="display: none;">
+                    <img src="/images/svgs/mentoring-text.svg" alt="wjs2" id="wjs3" class="justify-self-center" style="display: none;">
                 </div>
                 <div class="w-4/5 sm:w-1/2 flex flex-col justify-center items-center outline-none">
-                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsja()"><img src="../technoscape-tpm/photos/svgs/networking1.svg" alt="wjsbutton1" class="outline-none w-full"></button>
-                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsjb()"><img src="../technoscape-tpm/photos/svgs/job2.svg" alt="wjsbutton2" class="outline-none w-full"></button>
-                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsjc()"><img src="../technoscape-tpm/photos/svgs/Mentoring3.svg" alt="wjsbutton3" class="outline-none w-full"></button>
+                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsja()"><img src="/images/svgs/networking1.svg" alt="wjsbutton1" class="outline-none w-full"></button>
+                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsjb()"><img src="/images/svgs/job2.svg" alt="wjsbutton2" class="outline-none w-full"></button>
+                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsjc()"><img src="/images/svgs/Mentoring3.svg" alt="wjsbutton3" class="outline-none w-full"></button>
                 </div>
             </div>
         </div>
     </section>
     <!-- Timeline Section -->
-    <section class="h-100 bg-timeline bg-cover flex flex-col justify-center items-center px-8 sm:px-24" id="timeline-section">
-        <div class="overflow-x-auto">
-            <img src="../technoscape-tpm/photos/svgs/timelines.svg" alt="" class="" width="1920px" height="1080px">
+    <section class="h-screen bg-timeline bg-blacks flex flex-col justify-center px-8 sm:px-24" id="timeline-section">
+        <h1 class="text-center text-white my-10 text-5xl sm:text-6xl font-bold tracking-widest uppercase">TIMELINE</h1>
+        <div class="flex flex-col lg:flex-row w-full">
+            <img class="w-full my-4 lg:mr-4 lg:w-1/2" src="/images/svgs/open-regist.svg" alt="timeline.svg">
+            <img class="w-full my-4 lg:ml-4 lg:w-1/2" src="/images/svgs/technical-meeting.svg" alt="timeline.svg">
+        </div>
+        <div class="flex flex-col lg:flex-row w-full">
+            <img class="w-full my-4 lg:mr-4 lg:w-1/2" src="/images/svgs/close-regist.svg" alt="timeline.svg">
+            <img class="w-full my-4 lg:ml-4 lg:w-1/2" src="/images/svgs/compt-day.svg" alt="timeline.svg">
         </div>
     </section>
     <!-- Sponsor Section -->
@@ -232,27 +238,27 @@
         <div class="flex flex-col justify-center w-full text-white">
             <h1 class="text-center mt-10 text-5xl sm:text-6xl font-bold tracking-widest uppercase">Sponsor</h1>
             <h3 class="text-center font-bold text-5xl mt-10 font-medium">Platinum</h3>
-            <img src="../technoscape-tpm/photos/sponsor/platinum.png" alt="" class="mx-auto w-1/2 mt-8" />
+            <img src="/images/sponsor/platinum.png" alt="" class="mx-auto w-1/2 mt-8" />
             <!-- Gold -->
             <div class="flex flex-col md:flex-row mt-10">
                 <h1 class="text-center my-auto mx-auto font-bold text-4xl">Gold</h1>
                 <div class="multiple-items mx-auto w-5/6 my-8">
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/gold1.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/gold2.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/gold3.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/gold4.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/gold1.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/gold2.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/gold3.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/gold4.png" alt="" class="" /></div>
                 </div>
             </div>
             <!-- Silver -->
             <div class="flex flex-col md:flex-row mt-10">
                 <h1 class="text-center my-auto mx-auto font-bold text-3xl">Silver</h1>
                 <div class="multiple-items2 mx-auto w-5/6 my-8">
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/silver1.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/silver2.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/silver3.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/silver4.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/silver5.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="../technoscape-tpm/photos/sponsor/silver6.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/silver1.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/silver2.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/silver3.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/silver4.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/silver5.png" alt="" class="" /></div>
+                    <div class="mx-2"><img src="/images/sponsor/silver6.png" alt="" class="" /></div>
                 </div>
             </div>
         </div>
@@ -262,27 +268,27 @@
         <h1 class="text-center text-white font-bold text-3xl sm:text-5xl tracking-widest">MEDIA PARTNER</h1>
         <div class="flex flex-col justify-center mt-10 border-gradient border-4 w-full lg:w-1/2 mx-auto">
             <div class="multiple-items2 mx-auto mt-auto h-1/2 w-full my-auto p-8">
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp1.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp2.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp3.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp7.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp8.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp9.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp14.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp15.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp16.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp1.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp2.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp3.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp7.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp8.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp9.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp14.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp15.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp16.png" alt="mediapartner.png"/></div>
             </div>
             <div class="multiple-items2 mx-auto my-0 w-full my-auto p-8">
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp4.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp5.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp6.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp10.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp11.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp12.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp13.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp17.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp18.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="../technoscape-tpm/photos/mediapartner/mp19.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp4.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp5.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp6.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp10.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp11.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp12.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp13.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp17.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp18.png" alt="mediapartner.png"/></div>
+                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp19.png" alt="mediapartner.png"/></div>
             </div>
         </div>
     </section>
@@ -292,12 +298,12 @@
             <h1 class="text-white font-bold text-3xl sm:text-5xl tracking-widest text-center">OTHER EVENT</h1>
             <div class="flex flex-col md:flex-row justify-center">
                 <div class="bg-ocean w-full md:w-2/5 md:mx-6 lg:mx-8 flex flex-col justify-center p-8 rounded-xl mt-8">
-                    <img src="../technoscape-tpm/photos/background/aboutpage.png" alt="" class="w-full">
+                    <img src="/images/aboutpage.png" alt="" class="w-full">
                     <!-- <h1 class="text-white text-xs sm:text-xl text-left pt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minus voluptatum maiores dignissimos facilis expedita? Consectetur et exercitationem dignissimos mollitia eaque sapiente voluptas vero iusto! Impedit dolorem eos repellat laboriosam?</h1> -->
                     <div class="h-60"></div>
                 </div>
                 <div class="bg-ocean w-full md:w-2/5 md:mx-6 lg:mx-8 flex flex-col justify-center p-8 rounded-xl mt-8">
-                    <img src="../technoscape-tpm/photos/background/aboutpage.png" alt="" class="w-full">
+                    <img src="/images/aboutpage.png" alt="" class="w-full">
                     <!-- <h1 class="text-white text-xs sm:text-xl text-left pt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minus voluptatum maiores dignissimos facilis expedita? Consectetur et exercitationem dignissimos mollitia eaque sapiente voluptas vero iusto! Impedit dolorem eos repellat laboriosam?</h1> -->
                     <div class="h-60"></div>
                 </div>
@@ -305,13 +311,13 @@
         </div>
     </section>
     <!-- Contact Us -->
-    <section class="h-screen bg-blacks bg-cover bg-center flex flex-col justify-center items-center px-8 sm:px-24">
-        <div class="w-full flex flex-col md:flex-row-reverse">
+    <section class="h-100 bg-blacks bg-cover bg-center flex flex-col justify-center items-center px-8 sm:px-24">
+        <div class="w-full my-10 flex flex-col md:flex-row-reverse">
             <div class="flex flex-col md:w-2/3">
                 <h1 class="text-2xl sm:text-4xl md:text-3xl lg:text-5xl text-center tracking-widest text-white font-bold">We’d love to hear from you!</h1>
-                <img class="hidden md:flex w-full" src="../technoscape-tpm/photos/contactpng.png" alt="contact-png">
+                <img class="hidden md:flex w-full" src="/images/contactpng.png" alt="contact-png">
             </div>
-            <div class="mt-8 bg-purple-500 w-full md:w-1/3 md:mr-6 lg:mr-8 flex flex-col justify-evenly px-8 rounded-xl o">
+            <div class="mt-8 bg-purple-500 w-full md:w-1/3 md:mr-6 lg:mr-8 flex flex-col justify-evenly py-8 md:py-0 px-8 rounded-xl o">
                 <h1 class="text-center text-white text-2xl lg:text-3xl xl:text-4xl font-bold">Contact Us</h1>
                 <form action="" class="flex flex-col items-center justify-center content-between space-y-6 md:space-y-8">
                     <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" placeholder="Name" required>
@@ -329,26 +335,26 @@
             <!-- Top -->
             <div class="w-full flex flex-col lg:flex-row">
                 <div class="w-full sm:w-1/2 lg:w-1/3 flex lg:justify-center items-center">
-                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="instagram-footer"><img src="../technoscape-tpm/photos/svgs/Instagram.svg" alt="" width="50px" height="50px"></a>
+                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="instagram-footer"><img src="/images/svgs/Instagram.svg" alt="" width="50px" height="50px"></a>
                     <a href="#" class="text-white text-center">@technoscapebncc</a>
                 </div>
                 <div class="w-full sm:w-1/2 lg:w-1/3 flex lg:justify-center items-center">
-                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="email-footer"><img src="../technoscape-tpm/photos/svgs/email.svg" alt="" width="50px" height="50px"></a>
+                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="email-footer"><img src="/images/svgs/email.svg" alt="" width="50px" height="50px"></a>
                     <a href="#" class="text-white text-center">technoscape@bncc.net</a>
                 </div>
                 <div class="w-full sm:w-1/2 lg:w-1/3 flex lg:justify-center items-center">
-                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="footer-linkedin"><img src="../technoscape-tpm/photos/svgs/Linkedin.svg" alt="" width="50px" height="50px"></a>
+                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="footer-linkedin"><img src="/images/svgs/Linkedin.svg" alt="" width="50px" height="50px"></a>
                     <a href="#" class="text-white text-center">Bina Nusantara Computer Club</a>
                 </div>
             </div>
             <!-- bottom -->
             <div class="w-full flex flex-col lg:flex-row">
                 <div class="w-full sm:w-1/2 flex lg:justify-center items-center">
-                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="facebook-footer"><img src="../technoscape-tpm/photos/svgs/Facebook.svg" alt="" width="50px" height="50px"></a>
+                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="facebook-footer"><img src="/images/svgs/Facebook.svg" alt="" width="50px" height="50px"></a>
                     <a href="#" class="text-white text-center">Bina Nusantara Computer Club</a>
                 </div>
                 <div class="w-full sm:w-1/2 flex lg:justify-center items-center">
-                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="twitter-footer"><img src="../technoscape-tpm/photos/svgs/Twitter.svg" alt="" width="50px" height="50px"></a>
+                    <a href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="twitter-footer"><img src="/images/svgs/Twitter.svg" alt="" width="50px" height="50px"></a>
                     <a href="#" class="text-white text-center">@BNCC_Binus</a>
                 </div>
             </div>
@@ -358,26 +364,26 @@
             <div class="w-1/3 flex flex-col justify-end">
                 <div class="flex flex-col sm:flex-row justify-evenly items-center">
                     <p class="text-white">Powered By:</p>
-                    <img src="../technoscape-tpm/photos/Logo-Binus-University.png" alt="" class="w-full sm:w-1/2 lg:w-1/3">
+                    <img src="/images/Logo-Binus-University.png" alt="" class="w-full sm:w-1/2 lg:w-1/3">
                 </div>
                 <hr class="w-full mt-4">
                 <p class="text-left text-xs text-white">&copy 2020, Bina Nusantara Computer Club, All Right Reserved</p>
             </div>
             <div class="w-1/3 flex flex-col items-center justify-center">
-                <a href="#"><img class="transform hover:scale-110 motion-reduce:transform-none" src="../technoscape-tpm/photos/ehackathon_logo_1.png" alt="" width="100px" height="100px"></a>
+                <a href="#"><img class="transform hover:scale-110 motion-reduce:transform-none" src="/images/ehackathon_logo_1.png" alt="" width="100px" height="100px"></a>
                 <a href="#home-section" class="text-center hover:text-red-400 text-white">Home</a>
                 <a href="#champion-section" class="text-center hover:text-red-400 text-white">Champion</a>
                 <a href="#aboutus-section" class="text-center hover:text-red-400 text-white">About Us</a>
                 <a href="#faq-section" class="text-center hover:text-red-400 text-white">FaQ</a>
                 <a href="#timeline-section" class="text-center hover:text-red-400 text-white">Timeline</a>
-                <a class="transform hover:scale-110 motion-reduce:transform-none animate-bounce my-2"href="#"><img src="../technoscape-tpm/photos/svgs/arrow-up.svg" alt="" width="25px" height="25px"></a>
+                <a class="transform hover:scale-110 motion-reduce:transform-none animate-bounce my-2"href="#"><img src="/images/svgs/arrow-up.svg" alt="" width="25px" height="25px"></a>
                 <a href="#" class="text-center hover:text-red-400 text-white ">To the Top</a>
             </div>
             <div class="w-1/3 flex flex-col justify-end">
                 <div>
                     <div class="flex flex-col sm:flex-row justify-evenly items-center">
                         <p class="text-white">Organized By:</p>
-                        <img src="../technoscape-tpm/photos/BNCC_T.png" alt="" class="w-full sm:w-1/2 lg:w-1/3">
+                        <img src="/images/BNCC_T.png" alt="" class="w-full sm:w-1/2 lg:w-1/3">
                     </div>
                     <hr class="w-full mt-4">
                     <div class="w-full">

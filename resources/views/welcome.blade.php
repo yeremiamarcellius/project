@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="icon" href="/images/ehackathon_logo_1.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Technoscape - Join Us Now</title>
@@ -110,9 +111,9 @@
             </div>
         </div>
     </section>
-    <!-- FAQ Section -->
-    <section class="min-h-screen bg-faq bg-cover bg-center text-white flex flex-col justify-center items-center px-8 sm:px-24 my-auto" id="faq-section">
-        <div class="border-2 border-purple-600 rounded-lg bg-black bg-opacity-30 text-white w-full md:w-3/5 flex flex-col justify-center p-8 sm:p-16">
+     <!-- FAQ Section -->
+     <section class="min-h-screen bg-faq bg-cover bg-center text-white flex flex-col justify-center items-center px-8 sm:px-24 my-auto" id="faq-section">
+        <div class="border-2 border-colorful rounded-lg bg-black bg-opacity-30 text-white w-full md:w-3/5 flex flex-col justify-center p-8 sm:p-16">
             <h1 class="text-6xl text-center font-bold mb-8">FaQ</h1>
             <!-- Q1 -->
             <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="showz()">

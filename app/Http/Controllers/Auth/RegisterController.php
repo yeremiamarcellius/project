@@ -59,6 +59,8 @@ class RegisterController extends Controller
             'github' => ['required', 'string'],
             'birth_place' => ['required', 'string'],
             'birth_day' => ['required'], 
+            'card' => ['required'],
+            'cv' => ['required'],
         ]);
     }
 

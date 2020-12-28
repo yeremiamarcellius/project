@@ -49,6 +49,6 @@ class LoginController extends Controller
         if(auth()->attempt($login)){
             return redirect()->route('home');
         }
-        return redirect()->route('login')->with(['error' => 'Email/Password Incorrect' ]);
+        return redirect()->route('login')->with(['error' => 'Team Name / Password Incorrect' ]);
     }
 }

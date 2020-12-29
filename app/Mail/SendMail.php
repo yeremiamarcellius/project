@@ -35,4 +35,3 @@ class SendMail extends Mailable
         return $this->from($request->email)->subject($request->subject)->view('message')->with('data', $this->data);
     }
 }
-//from yang ada di baris 35 entah kok gabisa

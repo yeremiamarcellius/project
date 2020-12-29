@@ -69,17 +69,34 @@ body {
     background-color: #40A4FF;
 }
 
+.bg-dust{
+    background: #65789D;
+}
+
 .font-yellow{
     color: #fee0a0;
 }
-/* .alert {
-    position: relative;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-  } */
-  .alert-danger {
-    color: #d84641;
-    
-  }
+
+.border-colorful{
+    animation-name: border-colorful;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes border-colorful{
+    0%{
+        border-color: #40A4FF;
+    } 25%{
+        border-color: #3B82F6;
+    }50%{
+        border-color: #4338CA;
+    } 75%{
+        border-color: #3B82F6;
+    } 100%{
+        border-color: #40A4FF;
+    }
+}
+
+.bg-purples{
+    background: #574292;
+}

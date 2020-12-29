@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <!-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> -->
+    <link rel="icon" href="/images/ehackathon_logo_1.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -18,12 +18,12 @@
                 <a href="#" class="transform hover:scale-110 motion-reduce:transform-none p-3"><img src="/images/ehackathon_logo_1.png" alt="logo-brand.jpg" height="   75px" width="75px"></a>
                 <!-- Right Side -->
                 <ul class="text-white sm:self-center text-xl sm:border-none">
-                    <li class="sm:inline-block"><a href="../index.html#home-section" class="p-3 hover:text-red-500">Home</a></li>
-                    <li class="sm:inline-block"><a href="../index.html#champion-section" class="p-3 hover:text-red-500">Champion</a></li>
-                    <li class="sm:inline-block"><a href="../index.html#aboutus-section" class="p-3 hover:text-red-500">About Us</a></li>
-                    <li class="sm:inline-block"><a href="../index.html#faq-section" class="p-3 hover:text-red-500">FaQ</a></li>
-                    <li class="sm:inline-block"><a href="../index.html#timeline-section" class="p-3 hover:text-red-500">Timeline</a></li>
-                    <li class="sm:inline-block"><a href="../pages/login.html" class="my-2 px-3 py-1 hover:text-red-500 rounded-md border-2 border-gradient">Login</a></li>
+                    <li class="sm:inline-block"><a href="/#home-section" class="p-3 hover:text-red-500">Home</a></li>
+                    <li class="sm:inline-block"><a href="/#champion-section" class="p-3 hover:text-red-500">Champion</a></li>
+                    <li class="sm:inline-block"><a href="/#aboutus-section" class="p-3 hover:text-red-500">About Us</a></li>
+                    <li class="sm:inline-block"><a href="/#faq-section" class="p-3 hover:text-red-500">FaQ</a></li>
+                    <li class="sm:inline-block"><a href="/#timeline-section" class="p-3 hover:text-red-500">Timeline</a></li>
+                    <li class="sm:inline-block"><a href="{{route('login')}}" class="my-2 px-3 py-1 hover:text-red-500 rounded-md border-2 border-gradient">Login</a></li>
                 </ul>
             </div>
         </div>

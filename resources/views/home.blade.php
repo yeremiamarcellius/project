@@ -8,7 +8,7 @@
 <body>
     <h1>Hello {{Auth::user()->team_name}} !</h1>
     <form action="{{route('logout')}}" method="POST">
-    @csrf
+    @csrf                                                     
     <div>
         <button type="submit"> Logout</button>
     </div>

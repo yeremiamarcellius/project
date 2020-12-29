@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use Auth;
 class LoginController extends Controller
 {
     /*
@@ -47,7 +47,12 @@ class LoginController extends Controller
             'password' => $request->password
         ];
         if(auth()->attempt($login)){
-            return redirect()->route('home');
+            if(\Auth::user()->type=='admin'){
+                return redirect()->route('admin');
+            }else{
+                return redirect()->route('home');
+            }
+          
         }
         return redirect()->route('login')->with(['error' => 'Team Name / Password Incorrect' ]);
     }

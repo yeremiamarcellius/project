@@ -320,12 +320,30 @@
             </div>
             <div class="mt-8 bg-purple-500 w-full md:w-1/3 md:mr-6 lg:mr-8 flex flex-col justify-evenly py-8 md:py-0 px-8 rounded-xl o">
                 <h1 class="text-center text-white text-2xl lg:text-3xl xl:text-4xl font-bold">Contact Us</h1>
-                <form action="" class="flex flex-col items-center justify-center content-between space-y-6 md:space-y-8">
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" placeholder="Name" required>
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="email" placeholder="Email" required>
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" placeholder="Subject" required>
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" placeholder="Message" required>
-                    <button class="sm:2/3 lg:w-1/2 bg-orange hover:bg-red-700 text-center text-white font-bold text-xl p-2 rounded-lg" type="submit">Submit</button>
+                @if(count($errors)>0)
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                @if ($message = Session::get('success'))
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <strong>{{$message}}</strong>
+                </div>
+                @endif
+                <form method="post" action="{{route('send')}}"class="flex flex-col items-center justify-center content-between space-y-6 md:space-y-8">
+                    @csrf
+                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="name" placeholder="Name" required>
+                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="email" name="email" placeholder="Email" required>
+                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="subject" placeholder="Subject" required>
+                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="message" placeholder="Message" required>
+                    <button class="sm:2/3 lg:w-1/2 bg-orange hover:bg-red-700 text-center text-white font-bold text-xl p-2 rounded-lg" type="submit" name="send" value="Send">Submit</button>
                 </form>
             </div>
         </div>

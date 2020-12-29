@@ -32,3 +32,4 @@ Route::get('/download', function (){
 Route::group(['middleware'=>'admin','auth'] ,function(){
 Route::get('/admin', 'AdminController@index')->name('admin');
 });
+Route::post('/sendemail/send', 'SendEmailController@send')->name('send');

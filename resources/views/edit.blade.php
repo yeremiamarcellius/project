@@ -72,6 +72,7 @@
                         <button data-target="examplePopUpContent2" id="examplePopUpToggle2" class="ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full" onclick="openPopUpID()"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                     </div>
                 </div>
+                <button type="submit" class="w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">submit</button>
             </div>
         </div>
         <!-- Container Member -->

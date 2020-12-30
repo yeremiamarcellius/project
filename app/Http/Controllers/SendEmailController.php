@@ -15,15 +15,15 @@ class SendEmailController extends Controller
             'name' => 'required',
             'email' => 'required',
             'subject' => 'required',
-            'message' => 'required'
+            'message' => 'required',
         ]);
 
         $data = array(
             'name' => $request->name,
-            'message' => $request->message
+            'message' => $request->message,
         );
 
-        Mail::to(emailmu)->send(new SendMail($data));
+        Mail::to('riosheren89@gmail.com')->send(new SendMail($data));
         return back()->with('success', 'Thanks for contacting us');
     }
 }

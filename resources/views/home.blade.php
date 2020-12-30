@@ -108,14 +108,14 @@
                             <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8"></input>
                         </div>
                         <div class="w-full flex flex-col">
-                            <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload CV</label>
+                            <label class="ml-2 mt-2 font-dust text-sm font-semibold">View CV</label>
                             <div class="w-full flex flex-row">
                                 <input class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8"></input>
                                 <button data-target="examplePopUpContent1" id="examplePopUpToggle1" class="ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                             </div>
                         </div>
                         <div class="w-full flex flex-col">
-                            <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload ID Card</label>
+                            <label class="ml-2 mt-2 font-dust text-sm font-semibold">View ID Card</label>
                             <div class="w-full flex flex-row">
                                 <input class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8"></input>
                                 <button data-target="examplePopUpContent2" id="examplePopUpToggle2" class="ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>

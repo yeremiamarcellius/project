@@ -36,8 +36,7 @@
                         <div class="flex w-full justify-around">
                             <button class="transform hover:scale-110 motion-reduce:transform-none"><a href="{{route('admin-view', $user->id)}}"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/view-dashboardA2.svg" alt="edit.svg"></a></button>
                             <button class="transform hover:scale-110 motion-reduce:transform-none"><a href="{{route('admin-edit', $user->id)}}"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/edit-dashboardA.svg" alt="edit.svg"></a></button>
-                            <button data-target="statusPopUpContent" id="statusPopUpToggle" class="transform hover:scale-110 motion-reduce:transform-none"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/delete-dashboardA.svg" alt="edit.svg"></button>
-                                        
+                            <button data-target="statusPopUpContent" id="statusPopUpToggle" class="transform hover:scale-110 motion-reduce:transform-none"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/delete-dashboardA.svg" alt="edit.svg"></button>            
                         </div>
                     </div>
                 </div>

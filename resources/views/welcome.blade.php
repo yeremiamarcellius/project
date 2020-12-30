@@ -223,15 +223,15 @@
         </div>
     </section>
     <!-- Timeline Section -->
-    <section class="h-screen bg-timeline bg-blacks flex flex-col justify-center px-8 sm:px-24" id="timeline-section">
+    <section class="min-h-screen bg-timeline bg-blacks flex flex-col justify-center px-8 sm:px-24" id="timeline-section">
         <h1 class="text-center text-white my-10 text-5xl sm:text-6xl font-bold tracking-widest uppercase">TIMELINE</h1>
         <div class="flex flex-col lg:flex-row w-full">
-            <img class="w-full my-4 lg:mr-4 lg:w-1/2" src="/images/svgs/open-regist.svg" alt="timeline.svg">
-            <img class="w-full my-4 lg:ml-4 lg:w-1/2" src="/images/svgs/technical-meeting.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:mr-4 md:w-1/2 lg:w-1/4" src="/images/svgs/open-regist.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:ml-4 md:w-1/2 lg:w-1/4" src="/images/svgs/technical-meeting.svg" alt="timeline.svg">
         </div>
         <div class="flex flex-col lg:flex-row w-full">
-            <img class="w-full my-4 lg:mr-4 lg:w-1/2" src="/images/svgs/close-regist.svg" alt="timeline.svg">
-            <img class="w-full my-4 lg:ml-4 lg:w-1/2" src="/images/svgs/compt-day.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:mr-4 md:w-1/2 lg:w-1/4" src="/images/svgs/close-regist.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:ml-4 md:w-1/2 lg:w-1/4" src="/images/svgs/competition-day.svg" alt="timeline.svg">
         </div>
     </section>
     <!-- Sponsor Section -->

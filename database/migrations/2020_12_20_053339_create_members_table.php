@@ -24,8 +24,8 @@ class CreateMembersTable extends Migration
             $table->string('github');
             $table->string('birth_place');
             $table->date('birth_day');
-            $table->string('CV');
-            $table->string('identity_card');
+            $table->string('cv');
+            $table->string('card');
             $table->timestamps();
         });
     }

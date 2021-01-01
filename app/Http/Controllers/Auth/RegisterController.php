@@ -78,7 +78,7 @@ class RegisterController extends Controller
             $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('card')->getClientOriginalExtension();
             $fileNameToStore = $fileName.'_'.time().'_'.'.'.$extension;
-            $path = $request->file('card')->storeAs('card', $fileNameToStore);
+            $path = $request->file('card')->storeAs('public/card', $fileNameToStore);
         }else{
             $fileNameToStore = 'no-image.jpg';
         }
@@ -88,7 +88,7 @@ class RegisterController extends Controller
             $fileNamecv = pathinfo($fileNameWithExtcv, PATHINFO_FILENAME);
             $extensioncv = $request->file('cv')->getClientOriginalExtension();
             $fileNameToStorecv = $fileNamecv.'_'.time().'_'.'.'.$extensioncv;
-            $pathcv = $request->file('cv')->storeAs('cv', $fileNameToStorecv);
+            $pathcv = $request->file('cv')->storeAs('public/cv', $fileNameToStorecv);
         }else{
             $fileNameToStorecv = 'no-image.jpg';
         }

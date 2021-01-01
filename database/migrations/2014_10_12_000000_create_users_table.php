@@ -25,9 +25,10 @@ class CreateUsersTable extends Migration
             $table->string('github');
             $table->string('birth_place');
             $table->date('birth_day');
-            $table->string('card')->nullable();
-            $table->string('cv')->nullable();
+            $table->string('card');
+            $table->string('cv');
             $table->string('type');
+            $table->string('payment')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

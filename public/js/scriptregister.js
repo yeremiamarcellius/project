@@ -82,13 +82,64 @@ function show() {
 }
 
 const forms = document.getElementById('register-forms');
-    forms.addEventListener('submit', function(e){
-        const mobile = forms.wa_num.value;
-        // console.log(mobile.match(new RegExp("/\+?([ -]?\d+)+|\(\d+\)([ -]\d+)/g")))
-        if(!(/\+?([ -]?\d+)+|\(\d+\)([ -]\d+)/.test(mobile))){
-            alert("Invalid Phone Numbers");
-            return false;
-        }
-        return true;
+forms.addEventListener('submit', function (e) {
+    const mobile = forms.wa_num.value;
+    // console.log(mobile.match(new RegExp("/\+?([ -]?\d+)+|\(\d+\)([ -]\d+)/g")))
+    if (!(/\+?([ -]?\d+)+|\(\d+\)([ -]\d+)/.test(mobile))) {
+        alert("Invalid Phone Numbers");
+        return false;
     }
+    return true;
+}
 )
+
+var password = document.getElementById("password");
+password.onfocus = function () {
+    document.getElementById("message").style.display = "block";
+}
+password.onblur = function () {
+    document.getElementById("message").style.display = "none";
+}
+password.onkeyup = function () {
+    var lowerCase = /[a-z]/g;
+    if (password.value.match(lowerCase)) {
+        document.getElementById("lowercase").style.display = "none";
+    } else {
+        document.getElementById("lowercase").style.display = "block";
+    }
+    var upperCase = /[A-Z]/g;
+    if (password.value.match(upperCase)) {
+        document.getElementById("uppercase").style.display = "none";
+    } else {
+        document.getElementById("uppercase").style.display = "block";
+    }
+    var number = /[0-9]/g;
+    if (password.value.match(number)) {
+        document.getElementById("number").style.display = "none";
+    } else {
+        document.getElementById("number").style.display = "block";
+    }
+    if (password.value.length >= 8) {
+        document.getElementById("length").style.display = "none";
+    } else {
+        document.getElementById("length").style.display = "block";
+    }
+}
+
+var confirmPass = document.getElementById("confirm");
+confirmPass.onfocus = function () {
+    if (confirmPass.value != password.value) {
+        document.getElementById("confirm-message").style.display = "block";
+    }
+    else {
+        document.getElementById("confirm-message").style.display = "none";
+    }
+}
+
+function showPass() {
+    if (password.type === "password") {
+        password.type = "text";
+    } else if (password.type === "text") {
+        password.type = "password";
+    }
+}

@@ -15,10 +15,10 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('group_id')->unsigned();
-            $table->foreign('group_id')->references('id')->on('users')->onDelete('cascade');
+            $table->bigInteger('user_id')->unsigned()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->string('fullname');
-            $table->string('email')->unique();
+            $table->string('email_member')->unique();
             $table->string('wa_num')->unique();
             $table->string('line_id')->unique();
             $table->string('github');

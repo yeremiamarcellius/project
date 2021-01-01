@@ -62,8 +62,18 @@
                     @csrf
                     <div id="team" class="space-y-4 mx-auto flex flex-col">
                         <input type="text" name="team_name" placeholder="Group Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="password" name="password" placeholder="Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="password" name="password_confirmation" placeholder="Confirmation Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
+                        <input type="password" name="password" placeholder="Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required id="password"/>
+                        <div>
+                            <input type="checkbox" onclick="showPass()"> Show Password
+                        </div>
+                        <div class="hidden text-red-500" id="message">
+                            <p id="lowercase">Password must contain at least 1 lowercase letter</p>
+                            <p id="uppercase">Password must contain at least 1 uppercase letter</p>
+                            <p id="number">Password must contain at least 1 number</p>
+                            <p id="length">Password must be at least 8 characters</p>
+                        </div>
+                        <input type="password" name="password_confirmation" placeholder="Confirmation Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required id="confirm"/>
+                        <p class="hidden text-red-500" id="confirm-message">Passwords do not match!</p>
                         <div class="flex flex-row justify-around">
                             <div>
                                 <input type="radio" id="binusian" name="status" value="binusian" id="choose" onclick="myFunction()" class="mt-1.5 mr-1.5"/>

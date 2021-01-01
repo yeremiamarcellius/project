@@ -42,5 +42,6 @@ Route::get('/admin/payment', 'AdminController@payment')->name('admin-payment');
 Route::get('/admin/view/{id}', 'AdminController@view')->name('admin-view');
 Route::delete('/admin/delete/{id}', 'AdminController@destroy')->name('delete');
 Route::get('/admin/edit/{id}', 'AdminController@edit')->name('admin-edit');
+Route::patch('/admin/update/{id}', 'AdminController@store')->name('admin-update');
 });
 Route::post('/sendemail/send', 'SendEmailController@send')->name('send');

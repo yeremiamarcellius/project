@@ -50,7 +50,13 @@
                         <div class="flex flex-row mt-1">
                             <div class="text-white text-base font-semibold text-left w-14">Status</div>
                             <div class="text-white text-base mr-1 font-semibold text-left ">:</div>
+                            @if($user->payment_confirmation == 'unverified')
                             <div class="payment-status-text text-white text-base font-semibold text-left w-24">Unverified</div>
+                            @elseif($user->payment_confirmation == 'rejected')
+                            <div class="text-red-500 payment-status-text text-base font-semibold text-left w-24">Rejected</div>
+                            @elseif($user->payment_confirmation == 'approved')
+                            <div class="text-green-500 payment-status-text text-base font-semibold text-left w-24">Approved</div>
+                            @endif
                         </div>
                     </div>
                     <div class="w-1/4 flex flex-col justify-around">

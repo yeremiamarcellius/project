@@ -44,5 +44,7 @@ Route::delete('/admin/delete/{id}', 'AdminController@destroy')->name('admin-dele
 Route::get('/admin/edit/{id}', 'AdminController@edit')->name('admin-edit');
 Route::patch('/admin/update/{id}', 'AdminController@store')->name('admin-update');
 Route::patch('/admin/updatemember/{id}', 'AdminController@storemember')->name('admin-updatemember');
+Route::patch('admin/approve/{id}', 'AdminController@approve')->name('admin-approve');
+Route::patch('admin/reject/{id}', 'AdminController@reject')->name('admin-reject');
 });
 Route::post('/sendemail/send', 'SendEmailController@send')->name('send');

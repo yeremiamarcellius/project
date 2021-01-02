@@ -59,6 +59,20 @@ class AdminController extends Controller
 
     public function destroy($id){
         User::destroy($id);
+        // return back();
+    }
+
+    public function approve($id){
+        User::FindOrFail($id)->update([
+            'payment_confirmation' => 'approved'
+        ]);
+        return back();
+    }
+
+    public function reject($id){
+        User::FindOrFail($id)->update([
+            'payment_confirmation' => 'rejected'
+        ]);
         return back();
     }
 }

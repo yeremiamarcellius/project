@@ -46,7 +46,7 @@
                         <div class="flex flex-row mt-1">
                             <div class="text-white text-base font-semibold text-left w-14">Status</div>
                             <div class="text-white text-base mr-1 font-semibold text-left ">:</div>
-                            <div class="payment-status-text text-red-500 text-base font-semibold text-left w-24">Unverified</div>
+                            <div class="payment-status-text text-white-500 text-base font-semibold text-left w-24">Unverified</div>
                         </div>
                     </div>
                     <div class="w-1/4 flex flex-col justify-around">
@@ -71,8 +71,16 @@
                                 <p class="text-center font-semibold text-white text-sm">Verify payment for {{$user->team_name}}</p>
                             </div>
                             <div class="flex justify-center px-4 pt-4 space-x-2">
-                                <button class="approve-btn mr-2 focus:ring-4 focus:ring-purple-500 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Approve</button>
-                                <button class="reject-btn ml-2 focus:ring-4 focus:ring-blue-300 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-ocean text-white text-sm p-2">Reject</button>
+                                <form action="{{route('admin-approve', $user->id)}}" method="POST">
+                                    @csrf
+                                    @method('PATCH')
+                                    <button class="approve-btn mr-2 focus:ring-4 focus:ring-purple-500 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Approve</button>
+                                </form>
+                                {{-- <form action="{{route('admin-reject', $user->id)}}" method="POST"> --}}
+                                    {{-- @csrf
+                                    @method('PATCH') --}}
+                                    <button class="ml-2 focus:ring-4 focus:ring-blue-300 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-ocean text-white text-sm p-2">Reject</button>
+                                {{-- </form> --}}
                             </div>
                         </div>
                     </div>

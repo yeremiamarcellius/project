@@ -29,6 +29,7 @@ class CreateUsersTable extends Migration
             $table->string('cv');
             $table->string('type');
             $table->string('payment')->nullable();
+            $table->string('payment_confirmation')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

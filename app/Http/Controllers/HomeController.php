@@ -43,6 +43,7 @@ class HomeController extends Controller
         Auth::user()->update([
             'payment' => $fileNameToStore,
         ]);
+        return back();
     }
     public function store(Request $request){
         $request->validate([

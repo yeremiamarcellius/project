@@ -61,11 +61,12 @@
                 <div class="flex flex-col text-center w-24 mx-6 h-16">
                     <p class="border-b">Status</p>
                     @if(Auth::user()->payment_confirmation == 'unverified')
-                    <p class="text-sm my-2">Verification on progress</p>
+                    <p class="text-white text-sm my-2">Verification on progress</p>
                     @elseif(Auth::user()->payment_confirmation == 'approved')
-                    <p class="my-auto hidden">Approved</p>
+                    <p class="text-green-500 my-auto font-bold">Approved</p>
                     @elseif(Auth::user()->payment_confirmation == 'rejected')
-                    <p class="my-auto hidden">Rejected</p>
+                    <p class="text-red-500 my-auto font-bold">Rejected</p>
+                    @endif
                 </div>
             </div>
             <button class="image-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none bg-purple-800 w-1/3 sm:w-1/5 my-2 rounded-2xl">View</button>
@@ -74,7 +75,7 @@
                 <div class="flex flex-col justify-center items-center">
                     <h1 class="text-center font-semibold text-3xl text-white tracking-widest">Payment</h1>
                     <hr class="w-2/3 my-6 mx-auto">
-                    <img class="w-96 rounded-xl" src="../images/Hackathon-1.0.jpg" alt="viewphoto.jpg">
+                    <img class="w-96 rounded-xl" src="{{asset('storage/payment/'.Auth::user()->payment)}}" alt="viewphoto.jpg">
                 </div>
             </div>
         </div>
@@ -88,14 +89,19 @@
                     @elseif (Auth::user()->type == 'binusian')
                     <p class="border-b text-lg pb-1 font-semibold">Binusian</p>
                     <p class="my-auto">Rp80.000</p>
+                    @endif
                 </div>
                 <div class="flex flex-col">
                     <button class="transform hover:scale-110 motion-reduce:transform-none focus:outline-none bg-blue-500 w-11/12 sm:w-full mb-1.5 rounded-2xl flex flex-col">
                         <p class="ml-4 mt-2">Upload</p>
-                        <input type="file" id="card" name="card" accept="image/png, image/jpeg, image/jpg, image/pdf" class="w-11/12 sm:w-4/6 sm:h-1/2 text-xs ml-3 mb-2 rounded-full w-full"/>
+                        <form action="{{route('payment')}}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            @method('PATCH')
+                        <input type="file" id="card" name="payment" accept="image/png, image/jpeg, image/jpg, image/pdf" class="w-11/12 sm:w-4/6 sm:h-1/2 text-xs ml-3 mb-2 rounded-full w-full"/>
                     </button>
                     <div class="flex w-9/12 flex-col">
-                        <form action="#" class="w-11/12 sm:w-8/12 h-full my-auto" ><button type="submit" class="transform hover:scale-110 motion-reduce:transform-none focus:outline-none bg-purple-800 w-11/12 sm:w-8/12 mb-1.5 rounded-2xl" value="submit">Submit</button></form>
+                        <button type="submit" class="transform hover:scale-110 motion-reduce:transform-none focus:outline-none bg-purple-800 w-11/12 sm:w-8/12 mb-1.5 rounded-2xl" value="submit">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div> 

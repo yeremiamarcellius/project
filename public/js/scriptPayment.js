@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const payment1 = document.getElementById('payment1')
 // const payment2 = document.getElementById('payment2')
 // const payment3 = document.getElementById('payment3')
@@ -52,6 +53,8 @@
 //     target4.classList.toggle("hidden", false)
 // }
 
+=======
+>>>>>>> 493c0a8ca232f77456ab677e029e50e4faedb163
 $(document).ready(function(){
     $('.toggle-btn').on('click', function(){
         $(this).siblings('.toggle-content').first().toggleClass('hidden')

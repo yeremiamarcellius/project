@@ -32,8 +32,8 @@
         <div class="w-full flex flex-row flex-wrap">
             <!-- Card Container -->
             @foreach ($users as $user)
-            @if ($user->type != 'admin')
-            <div class="w-full md:w-1/2 xl:w-80 2xl:w-96 p-0 mt-8 md:p-4 lg:p-8">
+            @if ($user->type != 'admin' && $user->payment != NULL)
+            <div class="w-full md:w-1/2 xl:w-80 2xl:w-96 p-0 mt-8 md:py-2 lg:py-4">
                 <div class="payment-status-content w-full flex flex-row rounded-xl bg-purples hover:bg-purple-900 p-8">
                     <div class="w-3/4 mr-4 flex flex-col justify-center">
                         <h1 class="text-white font-semibold text-xl text-center tracking-widest">{{$user->team_name}}</h1>
@@ -41,7 +41,11 @@
                         <div class="flex flex-row mt-2">
                             <div class="text-white text-base font-semibold text-left w-14">Price</div>
                             <div class="text-white text-base mr-1 font-semibold text-left ">:</div>
+                            @if($user->type == 'binusian')
+                            <div class="text-white text-base font-semibold text-left w-24">Rp.80.000,00</div>
+                            @elseif($user->type == 'non-binusian')
                             <div class="text-white text-base font-semibold text-left w-24">Rp.100.000,00</div>
+                            @endif
                         </div>
                         <div class="flex flex-row mt-1">
                             <div class="text-white text-base font-semibold text-left w-14">Status</div>
@@ -50,16 +54,16 @@
                         </div>
                     </div>
                     <div class="w-1/4 flex flex-col justify-around">
-                        <button class="image-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img class="w-full" src="/images/svgs/view-dashboardA2.svg" alt=""></button>
-                        <button class="payment-status-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img class="w-full" src="/images/svgs/status-dashboard.svg" alt=""></button>
+                        <button class="payment-status-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img src="/images/svgs/status-dashboard.svg" height="80px" width="80px" alt=""></button>
                         <!-- image pop up -->
                         <div class="image-pop-up shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-dust rounded-xl top-1/2 left-1/2 hidden">
                             <div class="flex flex-col justify-center items-center">
                                 <h1 class="text-center font-semibold text-3xl text-white tracking-widest">Payment</h1>
                                 <hr class="w-2/3 my-6 mx-auto">
-                                <img class="w-96 rounded-xl" src="/images/Hackathon-2.0.jpg" alt="viewphoto.jpg">
+                                <img class="w-96 rounded-xl" src="{{asset('storage/payment/'.$user->payment)}}" alt="viewphoto.jpg">
                             </div>
                         </div>
+                        <button class="mt-2 image-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img src="/images/svgs/view-dashboardA2.svg" height="80px" width="80px" alt=""></button>
                         <!-- payment status pop up -->
                         <div class="payment-status-pop-up hidden w-80 flex flex-col sm:w-96 fixed top-4 transform -translate-x-1/2 z-50 py-4 bg-dust rounded-xl left-1/2">
                             <button class="close-btn transform hover:scale-110 motion-reduce:transform-none text-white inline-block self-end text-right mr-4"><img height="24px" width="24px" src="/images/svgs/close.svg" alt=""></button>
@@ -74,7 +78,7 @@
                                 <form action="{{route('admin-approve', $user->id)}}" method="POST">
                                     @csrf
                                     @method('PATCH')
-                                    <button class="approve-btn mr-2 focus:ring-4 focus:ring-purple-500 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Approve</button>
+                                    <button class="mr-2 focus:ring-4 focus:ring-purple-500 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Approve</button>
                                 </form>
                                 <form action="{{route('admin-reject', $user->id)}}" method="POST">
                                     @csrf

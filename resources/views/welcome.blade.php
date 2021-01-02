@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Nav for web -->
-    <nav class="z-40 hidden lg:flex bg-gradient-to-b from-black bg-opacity-50 fixed top-0 w-screen">
+    <nav class="z-40 hidden lg:flex bg-gradient-to-b from-black fixed top-0 w-screen">
         <div class="container mx-auto">
             <div class="sm:flex justify-between mx-10">
                 <!-- Left Side -->
@@ -26,13 +26,13 @@
                     <li class="sm:inline-block"><a href="#aboutus-section" class="p-3 hover:text-red-500">About Us</a></li>
                     <li class="sm:inline-block"><a href="#faq-section" class="p-3 hover:text-red-500">FaQ</a></li>
                     <li class="sm:inline-block"><a href="#timeline-section" class="p-3 hover:text-red-500">Timeline</a></li>
-                    <li class="sm:inline-block"><a href="{{route('login')}}" class="my-2 px-3 py-1 hover:text-red-500 rounded-md border-2 border-gradient">Login</a></li>
+                    <li class="sm:inline-block rounded-full border-2 border-gradient"><a href="{{route('login')}}" class="my-2 px-3 py-1 hover:text-red-500">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- nav for mob -->
-    <nav class="z-40 flex lg:hidden bg-gradient-to-b from-black bg-opacity-50 fixed top-0 w-screen">
+    <nav class="z-40 flex lg:hidden bg-black bg-opacity-70 fixed top-0 w-screen">
         <div class="container mx-auto">
             <div class="flex justify-between mx-10">
                 <!-- Left Side -->
@@ -46,7 +46,7 @@
                 <li class="inline-block w-full flex justify-center"><a href="#aboutus-section" class="text-center p-3 hover:text-red-500">About Us</a></li>
                 <li class="inline-block w-full flex justify-center"><a href="#faq-section" class="text-center p-3 hover:text-red-500">FaQ</a></li>
                 <li class="inline-block w-full flex justify-center"><a href="#timeline-section" class="text-center p-3 hover:text-red-500">Timeline</a></li>
-                <li class="inline-block w-full flex justify-center"><a href="{{route('login')}}" class="my-2 px-3 py-1 hover:text-red-500 bg-black bg-opacity-50 rounded-md border-2 border-gradient">Login</a></li>
+                <li class="inline-block w-full flex justify-center"><a href="{{route('login')}}" class="my-2 px-3 py-1 hover:text-red-500 bg-black bg-opacity-50 rounded-2xl border-2 border-gradient">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -59,20 +59,20 @@
                     <h1 class="text-white py-6 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold">Transform Ideas, Code Your Solution</h1>
                 </div>
             </div>
-            <div class="w-full md:w-2/4 flex flex-col justify-center">
-                <div class="inline-flex">
-                    <div class="multiple-items3 flex flex-row justify-evenly mx-auto w-full my-8">
-                        <div>
-                            <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon-1</p>
-                            <img src="/images/Hackathon-1.0.jpg" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
+            <div class="focus:outline-none w-full md:w-2/4 flex flex-col justify-center">
+                <div class="focus:outline-none inline-flex">
+                    <div class="focus:outline-none multiple-items3 flex flex-row justify-evenly mx-auto w-full my-8">
+                        <div class="focus:outline-none">
+                            <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon 1.0</p>
+                            <img src="/images/Hackathon-1.0.jpg" alt="" class="focus:outline-none border-4 w-full h-80 w-full border-gray-200 rounded"/>
                         </div>
-                        <div>
-                            <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon-2</p>
-                            <img src="/images/Hackathon-2.0.jpg" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
+                        <div class="focus:outline-none">
+                            <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon 2.0</p>
+                            <img src="/images/Hackathon-2.0.jpg" alt="" class="focus:outline-none border-4 w-full h-80 w-full border-gray-200 rounded"/>
                         </div>
-                        <div>
-                            <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon-3</p>
-                            <img src="/images/Hackathon-3.0.png" alt="" class="border-4 w-full h-80 w-full border-gray-200 rounded"/>
+                        <div class="focus:outline-none">
+                            <p class="text-center text-3xl tracking-widest mb-6 text-white font-bold ">Hackathon 3.0</p>
+                            <img src="/images/Hackathon-3.0.png" alt="" class="focus:outline-none border-4 w-full h-80 w-full border-gray-200 rounded"/>
                         </div>
                     </div>
                 </div>
@@ -84,9 +84,9 @@
         <h1 class="text-white text-center mb-8 text-4xl sm:text-6xl tracking-widest font-bold">Champion</h1>
         <div class="w-full sm:w-full lg:w-2/3 h-2/3 flex flex-col items-center justify-center">
             <div class="flex flex-col w-full sm:flex-row items-center justify-center md:justify-around">
-                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/first.svg" alt="first.svg"></div>
-                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/second.svg" alt="second.svg"></div>
-                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/third.svg" alt="third.svg"></div>
+                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/champion-1.svg" alt="first.svg"></div>
+                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/champion-2.svg" alt="second.svg"></div>
+                <div class="w-2/3 my-8 flex justify-center"><img class="w-full sm:w-4/5" src="/images/svgs/Champion-3.svg" alt="third.svg"></div>
             </div>
         </div>
     </section>
@@ -101,34 +101,36 @@
                 <div class="flex flex-col sm:flex-row justify-evenly">
                     <div class="flex flex-col">
                         <p class="py-3 sm:py-6 text-white font-semibold text-2xl">Register Here!</p>
-                        <div class="transform hover:scale-110 motion-reduce:transform-none bg-orange h-16 md:h-20 rounded-md text-white text-center text-xl md:text-2xl w-56 md:w-64 font-bold flex flex-col justify-center"><a href="{{route('register')}}">Register</a></div>
+                        <div class="w-48 focus:outline-none transform hover:scale-110 motion-reduce:transform-none bg-orange rounded-md text-white text-center text-xl md:text-2xl px-8 py-4 font-bold flex flex-col justify-center"><a href="{{route('register')}}">Register</a></div>
                     </div>
                     <div class="flex flex-col font-semibold text-2xl">
                         <p class="py-3 sm:py-6 text-white">Download guide book</p>
-                        <a href="/download"><div class="transform hover:scale-110 motion-reduce:transform-none bg-ocean h-16 md:h-20 rounded-md text-white text-center text-xl md:text-2xl w-56 md:w-64 font-bold flex flex-col justify-center">Download</div></a>
+                        <a class="w-48" href="/download">
+                            <div class="w-full focus:outline-none transform hover:scale-110 motion-reduce:transform-none bg-ocean rounded-md text-white text-center text-xl md:text-2xl px-8 py-4 font-bold flex flex-col justify-center">Download</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!-- FAQ Section -->
-     <section class="min-h-screen bg-faq bg-cover bg-center text-white flex flex-col justify-center items-center px-8 sm:px-24 my-auto" id="faq-section">
+    <!-- FAQ Section -->
+    <section class="min-h-screen bg-faq bg-cover bg-center text-white flex flex-col justify-center items-center px-8 sm:px-24 my-auto" id="faq-section">
         <div class="border-2 border-colorful rounded-lg bg-black bg-opacity-30 text-white w-full md:w-3/5 flex flex-col justify-center p-8 sm:p-16">
             <h1 class="text-6xl text-center font-bold mb-8">FaQ</h1>
             <!-- Q1 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="showz()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="showz()">
                 <h1 class="ml-4 my-2">Apa itu Hackathon 4.0?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="zxcv">Hackathon 3.0 adalah event Hackathon ke-3 yang akan diadakan oleh BNCC. Di event ini, peserta akan ditantang untuk menyelesaikan case-case yang berhubungan dengan dunia IT dalam waktu 48 jam dalam bentuk website atau aplikasi.</p>
             <!-- Q2 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show1()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show1()">
                 <h1 class="mx-4 my-2">Apakah Hackathon 4.0 akan diadakan secara online?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="asdf">Ya, Hackathon 3.0 ini akan diadakan full secara online.</p>
             <!-- Q3 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show2()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show2()">
                 <h1 class="mx-4 my-2">Apakah Hackathon 4.0 dipungut biaya?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
@@ -141,13 +143,13 @@
                 </ul>
             </div>
             <!-- Q4 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show3()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show3()">
                 <h1 class="mx-4 my-2">Apa saja hal yang diperlukan untuk mendaftar sebagai peserta?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="white"" ><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text0">Peserta harus melakukan registrasi tim di website hackathon.bncc.net, lalu mensubmit dokumen dokumen yang diperlukan seperti KTP, CV, dan Kartu Tanda Mahasiswa(Khusus untuk Binusian).</p>
             <!-- Q5 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show4()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show4()">
                 <h1 class="mx-4 my-2">Apa yang dapat saya dapatkan jika memenangkan kompetisi ini?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
@@ -161,43 +163,43 @@
                 </p>
             </div>
             <!-- Q6 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show5()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show5()">
                 <h1 class="mx-4 my-2">Apa saja persyaratan untuk menjadi peserta dalam Hackathon 4.0 ini?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text1">Untuk mengikuti Hackathon 3.0 ini, peserta dapat tim yang maksimal terdiri dari 3-4 orang dengan rentang usia 18-25 tahun. Setiap peserta diwajibkan untuk mengirimkan CV pada dashboard masing-masing tim. Setiap tim juga diwajibkan sudah melakukan pembayaran biaya lomba bila berminat mengikuti Hackathon 3.0 ini.</p>
             <!-- Q7 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show6()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show6()">
                 <h1 class="mx-4 my-2">Apakah peserta diwajibkan untuk membentuk tim saat mengikuti Hackathon 4.0?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text2">Peserta tidak diwajibkan untuk membentuk tim dan diperbolehkan untuk mengikuti event ini secara individu bila berminat.</p>
             <!-- Q8 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show7()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show7()">
                 <h1 class="mx-4 my-2">Apakah peserta diperbolehkan untuk terdaftar di 2 tim?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text3">Peserta tidak diperbolehkan mendaftar di lebih dari satu tim.</p>
             <!-- Q9 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show8()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show8()">
                 <h1 class="mx-4 my-2">Bagaimana jika saat event ini berlangsung, saya ada kepentingan lain yang harus dilakukan?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text4">Bila ada kepentingan lain saat event ini berlangsung, maka peserta wajib untuk memberikan info kepada panitia minimal H-2 dari event.</p>
             <!-- Q10 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show9()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show9()">
                 <h1 class="mx-4 my-2">Kapan pendaftaran ditutup?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text5">Pendaftaran ditutup pada 3 Oktober 2021, jam 21:00 WIB.</p>
             <!-- Q11 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show10()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show10()">
                 <h1 class="mx-4 my-2">Bagaimana jika peserta sudah menyiapkan sebagian source code sebelum event dimulai?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white" ><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></div>
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text6">Menyiapkan source code sebelum event dimulai, melanjutkan dan melombakan lagi project yang pernah dibuat merupakan pelanggaran. Apabila peserta terbukti melakukan pelanggaran maka akan didiskualifikasi.</p>
             <!-- Q12 -->
-            <button class="transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-b-2 border-gradient-right flex  text-left" onclick="show11()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-b-2 border-gradient-right flex  text-left" onclick="show11()">
                 <h1 class="mx-4 my-2">Bila saya tidak memiliki basic coding maupun design, apakah saya masih boleh ikut?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"> <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/> </svg></div>
             </div></button>
@@ -244,22 +246,22 @@
             <div class="flex flex-col md:flex-row mt-10">
                 <h1 class="text-center my-auto mx-auto font-bold text-4xl">Gold</h1>
                 <div class="multiple-items mx-auto w-5/6 my-8">
-                    <div class="mx-2"><img src="/images/sponsor/gold1.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/gold2.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/gold3.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/gold4.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/gold1.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/gold2.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/gold3.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/gold4.png" alt="" class="" /></div>
                 </div>
             </div>
             <!-- Silver -->
             <div class="flex flex-col md:flex-row mt-10">
                 <h1 class="text-center my-auto mx-auto font-bold text-3xl">Silver</h1>
                 <div class="multiple-items2 mx-auto w-5/6 my-8">
-                    <div class="mx-2"><img src="/images/sponsor/silver1.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/silver2.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/silver3.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/silver4.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/silver5.png" alt="" class="" /></div>
-                    <div class="mx-2"><img src="/images/sponsor/silver6.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/silver1.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/silver2.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/silver3.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/silver4.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/silver5.png" alt="" class="" /></div>
+                    <div class="focus:outline-none mx-2"><img src="/images/sponsor/silver6.png" alt="" class="" /></div>
                 </div>
             </div>
         </div>
@@ -269,27 +271,27 @@
         <h1 class="text-center text-white font-bold text-3xl sm:text-5xl tracking-widest">MEDIA PARTNER</h1>
         <div class="flex flex-col justify-center mt-10 border-gradient border-4 w-full lg:w-1/2 mx-auto">
             <div class="multiple-items2 mx-auto mt-auto h-1/2 w-full my-auto p-8">
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp1.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp2.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp3.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp7.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp8.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp9.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp14.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp15.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp16.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp1.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp2.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp3.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp7.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp8.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp9.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp14.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp15.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp16.png" alt="mediapartner.png"/></div>
             </div>
             <div class="multiple-items2 mx-auto my-0 w-full my-auto p-8">
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp4.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp5.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp6.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp10.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp11.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp12.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp13.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp17.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp18.png" alt="mediapartner.png"/></div>
-                <div class="w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="w-full h-full flex self-center" src="/images/mediapartner/mp19.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp4.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp5.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp6.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp10.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp11.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp12.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp13.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp17.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp18.png" alt="mediapartner.png"/></div>
+                <div class="focus:outline-none w-1/3 h-1/2 mx-2 flex flex-col justify-center"><img class="focus:outline-none w-full h-full flex self-center" src="/images/mediapartner/mp19.png" alt="mediapartner.png"/></div>
             </div>
         </div>
     </section>
@@ -318,7 +320,7 @@
                 <h1 class="text-2xl sm:text-4xl md:text-3xl lg:text-5xl text-center tracking-widest text-white font-bold">We’d love to hear from you!</h1>
                 <img class="hidden md:flex w-full" src="/images/contactpng.png" alt="contact-png">
             </div>
-            <div class="mt-8 bg-purple-500 w-full md:w-1/3 md:mr-6 lg:mr-8 flex flex-col justify-evenly py-8 md:py-0 px-8 rounded-xl o">
+            <div class="mt-8 bg-darkpurple w-full md:w-1/3 md:mr-6 lg:mr-8 flex flex-col justify-evenly py-8 md:py-0 px-8 rounded-xl o">
                 <h1 class="text-center text-white text-2xl lg:text-3xl xl:text-4xl font-bold">Contact Us</h1>
                 @if(count($errors)>0)
                     <div class="alert alert-danger">
@@ -339,14 +341,19 @@
                 @endif
                 <form method="post" action="{{route('send')}}"class="flex flex-col items-center justify-center content-between space-y-6 md:space-y-8">
                     @csrf
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="name" placeholder="Name" required>
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="email" name="email" placeholder="Email" required>
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="subject" placeholder="Subject" required>
-                    <input class="w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="message" placeholder="Message" required>
-                    <button class="sm:2/3 lg:w-1/2 bg-orange hover:bg-red-700 text-center text-white font-bold text-xl p-2 rounded-lg" type="submit" name="send" value="Send">Submit</button>
+                    <input class="text-white focus:outline-none w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="name" placeholder="Name" required>
+                    <input class="text-white focus:outline-none w-full placeholder-white bg-transparent border-white border-b-2" type="email" name="email" placeholder="Email" required>
+                    <input class="text-white focus:outline-none w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="subject" placeholder="Subject" required>
+                    <input class="text-white focus:outline-none w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="message" placeholder="Message" required>
+                    <button class="sm:2/3 lg:w-1/2 bg-orange focus:outline-none hover:bg-red-700 text-center text-white font-bold text-xl p-2 rounded-lg" type="submit" name="send" value="Send">Submit</button>
                 </form>
             </div>
         </div>
+    </section>
+    <!-- Pop Up Download -->
+    <section id="popUpDownload" class="w-full z-50 bg-blacks bg-opacity-50 items-center h-12 rounded-t-2xl fixed bottom-0 flex flex-col-reverse sm:flex-row justify-between px-8 sm:px-24">
+        <h1 class="my-4 text-white text-md md:text-xl">Download Guid Book Here</h1>
+        <a href="/download" class="my-4"><button class="p-2 focus:outline-none transform hover:scale-110 motion-reduce:transform-none animate-bounce sm:p-1 s m:w-48 md:w-64 rounded-xl bg-purples text-white text-md md:text-xl">Download Here</button></a>
     </section>
     <!-- Footer -->
     <footer class="bg-champ bg-cover bg-center flex flex-col p-8 sm:px-24">

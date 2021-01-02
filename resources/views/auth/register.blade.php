@@ -51,12 +51,13 @@
     <section id="register-section" class="min-h-screen bg-regis top-0 flex flex-col justify-center items-center mx-auto">
         <div class="register bg-black bg-opacity-50 border-2 border-gradient w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 2xl:w-1/4 mx-8 flex flex-col justify-center mx-auto p-6 my-32 h-auto">
             <div class="space-y-4" id="register-form"> <!-- Mx auto-->
-                <h1 class="text-xl text-center text-white m-0">REGISTER</h1>
+                <h1 class="font-bold tracking-widest text-3xl text-center text-white m-0">REGISTER</h1>
                 <!-- buttons buat switch -->
                 <div class="flex justify-center">
-                    <button class="border-1 border-white text-white text-xs w-24 h-7 rounded-full" style="background-color: purple" id="team-btn" onclick="showTab()">Team</button>
-                    <button class="border-1 border-white text-white text-xs w-24 h-7 rounded-full" id="lead-btn" onclick="showTab()">Leader</button>
+                    <button class="border-1 border-white text-white text-xs w-24 h-7 rounded-l-full focus:outline-none" style="background-color: #3C90E3;" id="team-btn" onclick="showTab()">Team</button>
+                    <button class="border- border-white text-white text-xs w-24 h-7 rounded-r-full focus:outline-none" style="background-color: #5bb7f0;" id="lead-btn" onclick="showTab()">Leader</button>
                 </div>
+                
                 <!-- button buat switch -->
                 <form action="{{route('register')}}" name="form-register" id="register-forms" method="POST"  enctype = "multipart/form-data">
                     @csrf
@@ -85,7 +86,7 @@
                             </div>
                         </div>
                         <div class="flex justify-center">
-                            <button class="w-1/2 h-9 bg-blue-700 text-white rounded-md px-1" id="next-btn" onclick="showTab()">Next</button>
+                            <button class="w-1/2 h-9 bg-ocean font-semibold tracking-widest text-white rounded-md px-1" id="next-btn" onclick="showTab()">Next</button>
                         </div>
                     </div>
                     <div id="leader" class="space-y-4 hidden">
@@ -103,7 +104,7 @@
                         <input type="file" id="cv" name="cv" accept="image/png, image/jpeg, image/jpg, image/pdf" class="mb-2 text-gray-400"/>
                         </div>
                         <div class="flex justify-center">
-                            <button type="submit" class="w-1/2 h-9 bg-blue-700 active:bg-blue-700 text-white rounded-md" value="submit">Submit</button>
+                            <button type="submit" class="w-1/2 h-9 bg-ocean font-semibold tracking-widest text-white rounded-md" value="submit">Submit</button>
                         </div>
                     </div>
                 </form>

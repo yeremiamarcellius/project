@@ -6,6 +6,8 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="icon" href="/images/ehackathon_logo_1.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>User - Home</title>
 </head>
 <body>
@@ -157,8 +159,7 @@
             </div>
         @endforeach
             <!-- Member Add -->
-           @if($user->members->count() < 3)
-           
+        @if($user->members->count() < 3)
             <div class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12">
                 <h1 class="text-white text-center font-semibold text-3xl">Member Information</h1>
                 <hr class="w-full h-4 mt-6">
@@ -167,31 +168,31 @@
                     @csrf
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Full Name</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="fullname"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="fullname"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Email</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="email_member"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="email_member"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Whatsapp Number</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="wa_num"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="wa_num"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Line ID</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8"name="line_id"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8"name="line_id"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">GitHub or Gitlub ID</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="github"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="github"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Place</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_place"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_place"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Date</label>
-                            <input type="date" class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_day"></input>
+                            <input type="date" class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_day"></input>
                         </div>
                         <div class="w-full flex flex-col">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload CV</label>
@@ -219,6 +220,7 @@
         @endif
         </div>
     </section>
+
     <div class="w-full purples bg-opacity-50 text-gray-200">
         <h1 class="flex justify-center pt-8">Jika ada informasi yang ingin diubah, silahkan hubungi Contact Person berikut:</h1>
         <div class="flex mx-auto ">

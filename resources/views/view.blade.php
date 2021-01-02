@@ -6,6 +6,8 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="icon" href="/images/ehackathon_logo_1.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Admin Panel - ViewData</title>
 </head>
 <body class="m-0 p-0">
@@ -13,11 +15,11 @@
     <nav class="flex flex-row z-50 bg-gradient-to-b fixed top-0 from-purple-600 bg-opacity-50 justify-between w-full">
         <img src="/images/ehackathon_logo_1.png" alt="" class="transform hover:scale-110 motion-reduce:transform-none ml-0 sm:ml-4 md:ml-8" height="100px" width="100px"/>
         <div class="bg-ocean flex flex-row justify-around rounded-bl-3xl p-2 w-60 xl:w-80 h-1/2">
-            <a class="mx-auto transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-pay.svg" alt="nav.svg"></a>
-            <a class="mx-auto transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin-payment')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-part.svg" alt="nav.svg"></a>
+            <a class="transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-pay.svg" alt="nav.svg"></a>
+            <a class="transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin-payment')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-part.svg" alt="nav.svg"></a>
             <form action="{{route('logout')}}" method="POST">
                 @csrf
-                <button type="submit"><img height="50px" width="50px" src="/images/svgs/nav-admin-logout.svg" alt="nav.svg"></button>
+                <button type="submit" class="mt-2"><img height="50px" width="50px" src="/images/svgs/nav-admin-logout.svg"  alt="nav.svg"></button>
             </form>
         </div>
     </nav>
@@ -98,36 +100,36 @@
                 <div class="flex flex-col mt-8">
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Full Name</label>
-                        <p class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->fullname}}</p>
+                        <p class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->fullname}}</p>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Email</label>
-                        <p class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->email_member}}</p>
+                        <p class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->email_member}}</p>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Whatsapp Number</label>
-                        <p class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->wa_num}}</p>
+                        <p class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->wa_num}}</p>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Line ID</label>
-                        <p class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->line_id}}</p>
+                        <p class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->line_id}}</p>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">GitHub or Gitlub ID</label>
-                        <p class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->github}}</p>
+                        <p class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->github}}</p>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Place</label>
-                        <p class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->birth_place}}</p>
+                        <p class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->birth_place}}</p>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Date</label>
-                        <p class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->birth_day}}</p>
+                        <p class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8">{{$member->birth_day}}</p>
                     </div>
                     <div class="w-full flex flex-col">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload CV</label>
                         <div class="w-full flex flex-row">
-                            <p class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8">{{$member->cv}}</p>
+                            <p class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8">{{$member->cv}}</p>
                             <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                             <!-- View ID -->
                             <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -142,7 +144,7 @@
                     <div class="w-full flex flex-col">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload ID Card</label>
                         <div class="w-full flex flex-row">
-                            <p class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8">{{$member->card}}</p>
+                            <p class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8">{{$member->card}}</p>
                             <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                             <!-- View ID -->
                             <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">

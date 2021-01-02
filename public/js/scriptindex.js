@@ -1,3 +1,6 @@
+const popUpDownload = document.querySelector("#popUpDownload");
+window.addEventListener("load", handleWindowScroll);
+window.addEventListener("scroll", handleWindowScroll);
 
 function showz(){
     if(document.getElementById("zxcv").style.display === "none"){
@@ -163,5 +166,14 @@ function show() {
         document.getElementById("dropdown").style.display === "block"
     ) {
         document.getElementById("dropdown").style.display = "none";
+    }
+}
+
+function handleWindowScroll() {
+    const scroll = this.scrollY;
+    if (scroll >= 2100) {
+        popUpDownload.classList.toggle("hidden", false);
+    } else {
+        popUpDownload.classList.toggle("hidden", true);
     }
 }

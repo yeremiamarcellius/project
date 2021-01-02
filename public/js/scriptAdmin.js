@@ -17,16 +17,16 @@ $(document).ready(function () {
         $(this).parent().toggleClass('hidden', true)
         $('#payment-status-pop-up-bg').toggleClass('hidden', true)
     })
-    $('.approve-btn').on('click', function(){
-        const paymentStatusText = $(this).parents('.payment-status-content').find('.payment-status-text')
-        paymentStatusText.toggleClass('text-green-500', true)
-        paymentStatusText.toggleClass('text-red-500', false)
-        paymentStatusText.html('Verified')
-    })
-    $('.reject-btn').on('click', function(){
-        const paymentStatusText = $(this).parents('.payment-status-content').find('.payment-status-text')
-        paymentStatusText.toggleClass('text-green-500', false)
-        paymentStatusText.toggleClass('text-red-500', true)
-        paymentStatusText.html('Reject')
-    })
+    // $('.approve-btn').on('click', function(){
+    //     const paymentStatusText = $(this).parents('.payment-status-content').find('.payment-status-text')
+    //     paymentStatusText.toggleClass('text-green-500', true)
+    //     paymentStatusText.toggleClass('text-red-500', false)
+    //     paymentStatusText.html('Verified')
+    // })
+    // $('.reject-btn').on('click', function(){
+    //     const paymentStatusText = $(this).parents('.payment-status-content').find('.payment-status-text')
+    //     paymentStatusText.toggleClass('text-green-500', false)
+    //     paymentStatusText.toggleClass('text-red-500', true)
+    //     paymentStatusText.html('Reject')
+    // })
 });

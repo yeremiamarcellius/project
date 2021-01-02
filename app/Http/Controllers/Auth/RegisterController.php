@@ -61,6 +61,7 @@ class RegisterController extends Controller
             'birth_day' => ['required'], 
             'card' => ['required'],
             'cv' => ['required'],
+          
         ]);
     }
 
@@ -106,6 +107,7 @@ class RegisterController extends Controller
             'type' => $data['status'],
             'card' => $fileNameToStore,
             'cv' => $fileNameToStorecv,
+            'payment_confirmation' => 'unverified',
         ]);
     }   
 }

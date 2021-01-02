@@ -13,15 +13,15 @@ function showTab() {
     if (document.getElementById("team").style.display === "block") {
         document.getElementById("team").style.display = "none";
         document.getElementById("leader").style.display = "block";
-        document.getElementById("lead-btn").style.backgroundColor = "purple";
-        document.getElementById("team-btn").style.backgroundColor = "black";
+        document.getElementById("lead-btn").style.backgroundColor = "#3C90E3";
+        document.getElementById("team-btn").style.backgroundColor = "#5bb7f0";
         document.getElementByClassName("register").style.width = "30em";
         document.getElementById("next-btn").innerHTML = "Submit";
     } else {
         document.getElementById("leader").style.display = "none";
         document.getElementById("team").style.display = "block";
-        document.getElementById("team-btn").style.backgroundColor = "purple";
-        document.getElementById("lead-btn").style.backgroundColor = "black";
+        document.getElementById("team-btn").style.backgroundColor = "#3C90E3";
+        document.getElementById("lead-btn").style.backgroundColor = "#5bb7f0";
         document.getElementById("next-btn").innerHTML = "Next";
     }
 }

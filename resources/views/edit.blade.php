@@ -6,6 +6,8 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="icon" href="/images/ehackathon_logo_1.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Admin Panel - Edit Data</title>
 </head>
 <body class="m-0 p-0">
@@ -13,11 +15,11 @@
     <nav class="flex flex-row z-50 bg-gradient-to-b fixed top-0 from-purple-600 bg-opacity-50 justify-between w-full">
         <img src="/images/ehackathon_logo_1.png" alt="" class="transform hover:scale-110 motion-reduce:transform-none ml-0 sm:ml-4 md:ml-8" height="100px" width="100px"/>
         <div class="bg-ocean flex flex-row justify-around rounded-bl-3xl p-2 w-60 xl:w-80 h-1/2">
-            <a class="mx-auto transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-pay.svg" alt="nav.svg"></a>
-            <a class="mx-auto transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin-payment')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-part.svg" alt="nav.svg"></a>
+            <a class="transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-pay.svg" alt="nav.svg"></a>
+            <a class="transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('admin-payment')}}"><img height="50px" width="50px" src="/images/svgs/nav-admin-part.svg" alt="nav.svg"></a>
             <form action="{{route('logout')}}" method="POST">
                 @csrf
-                <button type="submit"><img height="50px" width="50px" src="/images/svgs/nav-admin-logout.svg" alt="nav.svg"></button>
+                <button type="submit" class="mt-2"><img height="50px" width="50px" src="/images/svgs/nav-admin-logout.svg" alt="nav.svg"></button>
             </form>
         </div>
     </nav>
@@ -26,7 +28,7 @@
             <h1 class="text-white font-bold text-center text-3xl sm:text-4xl md:text-5xl">Dashboard</h1>
             <hr class="bg-white w-4/5 lg:w-1/2 my-8">
             <!-- Container Leader -->
-            <form method="POST" action="{{route('admin-update', $user->id)}}" class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12">
+            <form method="POST" action="{{route('admin-update', $user->id)}}" class="flex flex-col justify-center mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12">
                 @csrf
                 @method('patch')
                 <h1 class="text-white text-center font-semibold text-3xl">Edit Data - Leader</h1>
@@ -34,36 +36,36 @@
                 <div class="flex flex-col mt-8">
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Full Name</label>
-                        <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="full_name" value="{{$user->fullname}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="full_name" value="{{$user->fullname}}"></input>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Email</label>
-                        <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="email_leader" value="{{$user->email_leader}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="email_leader" value="{{$user->email_leader}}"></input>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Whatsapp Number</label>
-                        <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="wa_num" value="{{$user->wa_num}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="wa_num" value="{{$user->wa_num}}"></input>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Line ID</label>
-                        <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="line_id" value="{{$user->line_id}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="line_id" value="{{$user->line_id}}"></input>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">GitHub or Gitlub ID</label>
-                        <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="github" value="{{$user->github}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="github" value="{{$user->github}}"></input>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Place</label>
-                        <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_place" value="{{$user->birth_place}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_place" value="{{$user->birth_place}}"></input>
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Date</label>
-                        <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_day" value="{{$user->birth_day}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_day" value="{{$user->birth_day}}"></input>
                     </div>
                     <div class="w-full flex flex-col">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload CV</label>
                         <div class="w-full flex flex-row">
-                            <input class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$user->cv}}"></input>
+                            <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$user->cv}}"></input>
                             <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                             <!-- View ID -->
                             <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -78,7 +80,7 @@
                     <div class="w-full flex flex-col">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload ID Card</label>
                         <div class="w-full flex flex-row">
-                            <input class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$user->card}}"></input>
+                            <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$user->card}}"></input>
                             <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                             <!-- View ID -->
                             <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -90,12 +92,12 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Submit</button>
+                    <button type="submit" class="mx-auto w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Submit</button>
                 </div>
             </form>
             <!-- Container Member -->
             @foreach ($user->members as $member)
-                <form method="POST" action="{{route('admin-update', $user->id)}}" class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12">
+                <form method="POST" action="{{route('admin-updatemember', $member->id)}}" class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12">
                     @csrf
                     @method('patch')
                     <h1 class="text-white text-center font-semibold text-3xl">Edit Data - Member</h1>
@@ -103,36 +105,36 @@
                     <div class="flex flex-col mt-8">
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Full Name</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="full_name" value="{{$member->fullname}}"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="full_name" value="{{$member->fullname}}"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Email</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="email" value="{{$member->email_member}}"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="email" value="{{$member->email_member}}"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Whatsapp Number</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="wa_num" value="{{$member->wa_num}}"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="wa_num" value="{{$member->wa_num}}"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Line ID</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="line_id" value="{{$member->line_id}}"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="line_id" value="{{$member->line_id}}"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">GitHub or Gitlub ID</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="github" value="{{$member->github}}"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="github" value="{{$member->github}}"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Place</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_place" value="{{$member->birth_place}}"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_place" value="{{$member->birth_place}}"></input>
                         </div>
                         <div class="w-full">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Birth Date</label>
-                            <input class="w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_day" value="{{$member->birth_day}}"></input>
+                            <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="birth_day" value="{{$member->birth_day}}"></input>
                         </div>
                         <div class="w-full flex flex-col">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload CV</label>
                             <div class="w-full flex flex-row">
-                                <input class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$member->cv}}"></input>
+                                <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$member->cv}}"></input>
                                 <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                                 <!-- View ID -->
                                 <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -147,7 +149,7 @@
                         <div class="w-full flex flex-col">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload ID Card</label>
                             <div class="w-full flex flex-row">
-                                <input class="w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$member->card}}"></input>
+                                <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$member->card}}"></input>
                                 <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                                 <!-- View ID -->
                                 <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -159,7 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Submit</button>
+                        <button type="submit" class="mx-auto pl-2 w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Submit</button>
                     </div>
                 </form>
             @endforeach

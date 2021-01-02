@@ -365,8 +365,8 @@
                     <a target="_blank" href="https://www.instagram.com/technoscapebncc/" class="text-white text-center">@technoscapebncc</a>
                 </div>
                 <div class="w-full sm:w-1/2 lg:w-1/3 flex lg:justify-center items-center">
-                    <a  href="#" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="email-footer"><img src="/images/svgs/email.svg" alt="" width="50px" height="50px"></a>
-                    <a  href="#" class="text-white text-center">technoscape@bncc.net</a>
+                    <a  href="mailto:technoscape@bncc.net" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="email-footer"><img src="/images/svgs/email.svg" alt="" width="50px" height="50px"></a>
+                    <a  href="mailto:technoscape@bncc.net" class="text-white text-center">technoscape@bncc.net</a>
                 </div>
                 <div class="w-full sm:w-1/2 lg:w-1/3 flex lg:justify-center items-center">
                     <a target="_blank" href="https://www.linkedin.com/company/bina-nusantara-computer-club/" class="transform hover:scale-110 motion-reduce:transform-none mr-2" id="footer-linkedin"><img src="/images/svgs/Linkedin.svg" alt="" width="50px" height="50px"></a>

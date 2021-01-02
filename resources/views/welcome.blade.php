@@ -314,7 +314,7 @@
         </div>
     </section>
     <!-- Contact Us -->
-    <section class="h-100 bg-blacks bg-cover bg-center flex flex-col justify-center items-center px-8 sm:px-24">
+    <section class="h-100 bg-blacks bg-cover bg-center flex flex-col justify-center items-center px-8 sm:px-24 focus:outline-none">
         <div class="w-full my-10 flex flex-col md:flex-row-reverse">
             <div class="flex flex-col md:w-2/3">
                 <h1 class="text-2xl sm:text-4xl md:text-3xl lg:text-5xl text-center tracking-widest text-white font-bold">We’d love to hear from you!</h1>

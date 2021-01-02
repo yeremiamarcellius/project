@@ -20,6 +20,10 @@
         </div>
     </nav>
     <section class="min-h-screen bg-blacks px-8 py-32 sm:px-24">
+    <div class="flex flex-col text-gray-200 text-center uppercase tracking-widest my-4">
+            <h1 class="text-2xl font-bold sm:text-3xl">Welcome</h1>
+            <h1 class="text-4xl font-bold sm:text-6xl">Team {{Auth::user()->team_name}}</h1>
+        </div>
         <div class="flex flex-col justify-center items-center">
             <!-- Container Leader -->
             <div class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12">
@@ -205,9 +209,35 @@
                     </form>
                 </div>
             </div>
+            <div class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12 text-gray-200">
+                <p class="text-center text-2xl">Notes : You can add {{3-$user->members->count()}} more members</p>
+            </div>
+        @else
+            <div class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12 text-gray-200">
+                <p class="text-center text-2xl">You cannot add any more member</p>
+            </div>
         @endif
         </div>
     </section>
+    <div class="w-full purples bg-opacity-50 text-gray-200">
+        <h1 class="flex justify-center pt-8">Jika ada informasi yang ingin diubah, silahkan hubungi Contact Person berikut:</h1>
+        <div class="flex mx-auto ">
+            <div class="flex flex-col my-10 w-1/12 ml-auto">
+                <h1 class="text-center font-bold">Nama</h1>
+                <div class="flex ">
+                    <img src="/images/svgs/linelogo.svg" alt="" class="w-8">
+                        <p class="mx-2 text-xs my-auto">@ID LINE</p>
+                </div>
+            </div>
+            <div class="flex flex-col my-10 w-1/12 mr-auto ml-10">
+                <h1 class="text-center font-bold">Nama</h1>
+                <div class="flex ">
+                    <img src="/images/svgs/linelogo.svg" alt="" class="w-8">
+                        <p class="mx-2 text-xs my-auto">@ID LINE</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{asset('js/scriptHome.js')}}"></script>
 </body>

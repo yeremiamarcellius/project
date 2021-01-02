@@ -18,9 +18,9 @@ class CreateMembersTable extends Migration
             $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->string('fullname');
-            $table->string('email_member')->unique();
-            $table->string('wa_num')->unique();
-            $table->string('line_id')->unique();
+            $table->string('email_member');
+            $table->string('wa_num');
+            $table->string('line_id');
             $table->string('github');
             $table->string('birth_place');
             $table->date('birth_day');

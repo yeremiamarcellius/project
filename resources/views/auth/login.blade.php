@@ -65,7 +65,7 @@
                         <label for="remember-me" class="text-white">Remember Me</label>
                     </div>
                     @if (session('error'))
-                        <div class="alert alert-danger">{{ session('error') }}</div>
+                        <div class="alert alert-danger text-red-400">{{ session('error') }}</div>
                          @endif
                     <p class="text-white">Not yet have an account? <a href="{{route('register')}}" class="text-yellow-200">Click here</a></p>
                     <div class="flex justify-center">

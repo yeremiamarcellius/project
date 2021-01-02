@@ -215,9 +215,9 @@
                     <img src="/images/svgs/mentoring-text.svg" alt="wjs2" id="wjs3" class="justify-self-center" style="display: none;">
                 </div>
                 <div class="w-4/5 sm:w-1/2 flex flex-col justify-center items-center outline-none">
-                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsja()"><img src="/images/svgs/networking1.svg" alt="wjsbutton1" class="outline-none w-full"></button>
-                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsjb()"><img src="/images/svgs/job2.svg" alt="wjsbutton2" class="outline-none w-full"></button>
-                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none" onclick="wsjc()"><img src="/images/svgs/Mentoring3.svg" alt="wjsbutton3" class="outline-none w-full"></button>
+                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none focus:outline-none" onclick="wsja()"><img src="/images/svgs/networking1.svg" alt="wjsbutton1" class="outline-none w-full"></button>
+                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none focus:outline-none" onclick="wsjb()"><img src="/images/svgs/job2.svg" alt="wjsbutton2" class="outline-none w-full"></button>
+                    <button class="w-full transform hover:scale-110 motion-reduce:transform-none sm:w-4/5 my-4 outline-none focus:outline-none" onclick="wsjc()"><img src="/images/svgs/Mentoring3.svg" alt="wjsbutton3" class="outline-none w-full"></button>
                 </div>
             </div>
         </div>

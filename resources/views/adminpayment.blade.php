@@ -28,7 +28,8 @@
             <!-- Card Container -->
             @foreach ($users as $user)
             @if ($user->type != 'admin')
-            <div class="w-full sm:w-1/2 xl:w-80 2xl:w-96 p-0 mt-8 md:p-4 lg:p-8">
+            <div class="delete-pop-up-card w-full sm:w-1/2 xl:w-80 2xl:w-96 p-0 mt-8 md:p-4 lg:p-8">
+                <!-- Card -->
                 <div class="w-full flex flex-row rounded-xl bg-purples hover:bg-purple-900 p-8">
                     <div class="w-full flex flex-col justify-center">
                         <h1 class="text-white font-semibold text-xl text-center tracking-widest">{{$user->team_name}}</h1>
@@ -36,7 +37,25 @@
                         <div class="flex w-full justify-around">
                             <button class="transform hover:scale-110 motion-reduce:transform-none"><a href="{{route('admin-view', $user->id)}}"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/view-dashboardA2.svg" alt="edit.svg"></a></button>
                             <button class="transform hover:scale-110 motion-reduce:transform-none"><a href="{{route('admin-edit', $user->id)}}"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/edit-dashboardA.svg" alt="edit.svg"></a></button>
-                            <button data-target="statusPopUpContent" id="statusPopUpToggle" class="transform hover:scale-110 motion-reduce:transform-none"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/delete-dashboardA.svg" alt="edit.svg"></button> 
+                            <form method="POST" action="{{route('admin-delete', $user->id)}}" class = "ml-3">
+                                @csrf
+                                @method('DELETE')
+                                <a class="focus:outline-none delete-pop-up-btn transform hover:scale-110 motion-reduce:transform-none buttonZ"><img class="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20" src="/images/svgs/delete-dashboardA.svg" alt="edit.svg"></a>
+                                <!--delete pop up -->
+                                <div class="delete-pop-up hidden w-80 flex flex-col sm:w-96 fixed top-4 transform -translate-x-1/2 z-50 py-4 bg-dust rounded-xl left-1/2">
+                                    <div class="flex justify-center px-4 pb-4">
+                                        <h1 class="text-white text-center font-semibold tracking-widest justify-self-center text-xl">Delete Participant</h1>
+                                    </div>
+                                    <hr class="w-2/3 mx-auto">
+                                    <div class="flex items-center px-4 py-4 justify-center">
+                                        <p class="text-center font-semibold text-white text-sm">Delete Participant?</p>
+                                    </div> 
+                                    <div class="flex justify-center px-4 pt-4 space-x-2">
+                                        <button class="focus:outline-none cancel-btn transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-ocean text-white text-sm p-2">Cancel</button>
+                                        <button type="submit" class="focus:outline-none delete-btn transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Delete</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -46,27 +65,7 @@
         </div>
     </div>
 </section>
-<!-- PopUp Payment Status -->
-<section class="flex items-center hidden content-center bg-black fixed top-0 h-screen bg-opacity-50 w-full" id="popUpPaymentStatus">
-    <div id="statusPopUpContent" class="popUp-Status w-80 flex flex-col sm:w-96 hidden fixed top-4 transform -translate-x-1/2 z-50 py-4 bg-dust rounded-xl left-1/2" id="examplePopUpContent">
-        <div class="flex justify-center px-4 pb-4">
-            <h1 class="text-white text-center font-semibold tracking-widest justify-self-center text-xl">Delete Participant</h1>
-        </div>
-        <hr class="w-2/3 mx-auto">
-        <div class="flex items-center px-4 py-4 justify-center">
-            <p class="text-center font-semibold text-white text-sm">Delete Participant?</p>
-        </div> 
-        <div class="flex justify-center px-4 pt-4 space-x-2">
-            <button id="closeStatus" class="transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-ocean text-white text-sm p-2">Cancel</button>
-            <form action="{{route('delete', $user->id)}}" class = "ml-3" method="POST">
-                @csrf
-                @method('DELETE')
-                <button type="submit" data-target="paymentStatus" id="closeStatus1" class="transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Delete</button>
-            </form>
-            
-        </div>
-    </div>
-</section>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{asset('js/scriptParticipant.js') }}"></script>
 </body>
 </html>

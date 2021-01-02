@@ -26,13 +26,26 @@ class AdminController extends Controller
 
     public function edit($id){
         $user = User::FindOrFail($id);
-        $members = Member::all();
-        return view('edit', compact('user', 'members'));
+        return view('edit', compact('user'));
     }
 
     public function store(Request $request, $id){
         User::FindOrFail($id)->update([
             'email_leader' => $request->email_leader,
+            'fullname' => $request->full_name,
+            'wa_num' => $request->wa_num,
+            'line_id' => $request->line_id,
+            'github' => $request->github,
+            'birth_place' => $request->birth_place,
+            'birth_day' => $request->birth_day,
+        ]);
+
+        return back();
+    }
+
+    public function storemember(Request $request, $id){
+        Member::FindOrFail($id)->update([
+            'email_member' => $request->email,
             'fullname' => $request->full_name,
             'wa_num' => $request->wa_num,
             'line_id' => $request->line_id,

@@ -59,7 +59,7 @@ class AdminController extends Controller
 
     public function destroy($id){
         User::destroy($id);
-        // return back();
+        return back();
     }
 
     public function approve($id){

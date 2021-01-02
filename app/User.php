@@ -19,7 +19,7 @@ class User extends Authenticatable
         return $this->hasMany('App\Member');
     }
     protected $fillable = [
-        'type','team_name', 'password', 'fullname', 'email_leader', 'wa_num' , 'line_id', 'github', 'birth_place' , 'birth_day', 'card', 'cv'
+        'type','team_name', 'password', 'fullname', 'email_leader', 'wa_num' , 'line_id', 'github', 'birth_place' , 'birth_day', 'card', 'cv', 'payment', 'payment_confirmation',
     ];
 
     /**

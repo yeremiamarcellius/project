@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::group(['middleware'=>'user','auth'] ,function(){
+Route::patch('/home/uploadpayment', 'HomeController@payment')->name('payment');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home/payment' , function(){
     return view('userpayment');

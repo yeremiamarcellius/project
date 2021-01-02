@@ -29,6 +29,21 @@ class HomeController extends Controller
         return view('home', compact('user'));
     }
 
+    public function payment(Request $request){
+        if($request->hasFile('payment')){
+            $fileNameWithExt = $request->file('payment')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('payment')->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'_'.'.'.$extension;
+            $path = $request->file('payment')->storeAs('public/payment', $fileNameToStore);
+        }else{
+            $fileNameToStore = 'no-image.jpg';
+        }
+
+        Auth::user()->update([
+            'payment' => $fileNameToStore,
+        ]);
+    }
     public function store(Request $request){
         $request->validate([
             'fullname' => 'required',

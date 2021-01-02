@@ -32,7 +32,7 @@
         <div class="w-full flex flex-row flex-wrap">
             <!-- Card Container -->
             @foreach ($users as $user)
-            @if ($user->type != 'admin')
+            @if ($user->type != 'admin' && $user->payment != NULL)
             <div class="w-full md:w-1/2 xl:w-80 2xl:w-96 p-0 mt-8 md:p-4 lg:p-8">
                 <div class="payment-status-content w-full flex flex-row rounded-xl bg-purples hover:bg-purple-900 p-8">
                     <div class="w-3/4 mr-4 flex flex-col justify-center">
@@ -41,16 +41,25 @@
                         <div class="flex flex-row mt-2">
                             <div class="text-white text-base font-semibold text-left w-14">Price</div>
                             <div class="text-white text-base mr-1 font-semibold text-left ">:</div>
+                            @if($user->type == 'binusian')
+                            <div class="text-white text-base font-semibold text-left w-24">Rp.80.000,00</div>
+                            @elseif($user->type == 'non-binusian')
                             <div class="text-white text-base font-semibold text-left w-24">Rp.100.000,00</div>
+                            @endif
                         </div>
                         <div class="flex flex-row mt-1">
                             <div class="text-white text-base font-semibold text-left w-14">Status</div>
                             <div class="text-white text-base mr-1 font-semibold text-left ">:</div>
-                            <div class="payment-status-text text-white-500 text-base font-semibold text-left w-24">Unverified</div>
+                            @if($user->payment_confirmation == 'unverified')
+                            <div class="payment-status-text text-white text-base font-semibold text-left w-24">Unverified</div>
+                            @elseif($user->payment_confirmation == 'rejected')
+                            <div class="payment-status-text text-red-500 text-base font-semibold text-left w-24">Rejected</div>
+                            @elseif($user->payment_confirmation == 'approved')
+                            <div class="payment-status-text text-green-500 text-base font-semibold text-left w-24">Verified</div>
+                            @endif
                         </div>
                     </div>
                     <div class="w-1/4 flex flex-col justify-around">
-                        <button class="image-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img class="w-full" src="/images/svgs/view-dashboardA2.svg" alt=""></button>
                         <button class="payment-status-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img class="w-full" src="/images/svgs/status-dashboard.svg" alt=""></button>
                         <!-- image pop up -->
                         <div class="image-pop-up shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-dust rounded-xl top-1/2 left-1/2 hidden">
@@ -60,6 +69,7 @@
                                 <img class="w-96 rounded-xl" src="/images/Hackathon-2.0.jpg" alt="viewphoto.jpg">
                             </div>
                         </div>
+                        <button class="image-btn transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img class="w-full" src="/images/svgs/view-dashboardA2.svg" alt=""></button>
                         <!-- payment status pop up -->
                         <div class="payment-status-pop-up hidden w-80 flex flex-col sm:w-96 fixed top-4 transform -translate-x-1/2 z-50 py-4 bg-dust rounded-xl left-1/2">
                             <button class="close-btn transform hover:scale-110 motion-reduce:transform-none text-white inline-block self-end text-right mr-4"><img height="24px" width="24px" src="/images/svgs/close.svg" alt=""></button>
@@ -74,13 +84,13 @@
                                 <form action="{{route('admin-approve', $user->id)}}" method="POST">
                                     @csrf
                                     @method('PATCH')
-                                    <button class="approve-btn mr-2 focus:ring-4 focus:ring-purple-500 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Approve</button>
+                                    <button class="mr-2 focus:ring-4 focus:ring-purple-500 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Approve</button>
                                 </form>
-                                {{-- <form action="{{route('admin-reject', $user->id)}}" method="POST"> --}}
-                                    {{-- @csrf
-                                    @method('PATCH') --}}
+                                <form action="{{route('admin-reject', $user->id)}}" method="POST"> 
+                                    @csrf
+                                    @method('PATCH') 
                                     <button class="ml-2 focus:ring-4 focus:ring-blue-300 focus:outline-none transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-ocean text-white text-sm p-2">Reject</button>
-                                {{-- </form> --}}
+                                </form> 
                             </div>
                         </div>
                     </div>

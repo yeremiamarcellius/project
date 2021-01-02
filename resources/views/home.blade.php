@@ -6,6 +6,8 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="icon" href="/images/ehackathon_logo_1.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>User - Home</title>
 </head>
 <body>
@@ -157,8 +159,7 @@
             </div>
         @endforeach
             <!-- Member Add -->
-           @if($user->members->count() < 3)
-           
+        @if($user->members->count() < 3)
             <div class="flex flex-col mb-16 rounded-xl w-full w-full md:w-3/5 lg:w-1/2 bg-dust px-8 lg:px-16 2xl:px-32 py-12">
                 <h1 class="text-white text-center font-semibold text-3xl">Member Information</h1>
                 <hr class="w-full h-4 mt-6">
@@ -219,7 +220,8 @@
         @endif
         </div>
     </section>
-    <div class="w-full purples bg-opacity-50 text-gray-200">
+
+    <footer class="w-full purples bg-opacity-50 text-gray-200">
         <h1 class="flex justify-center pt-8">Jika ada informasi yang ingin diubah, silahkan hubungi Contact Person berikut:</h1>
         <div class="flex mx-auto ">
             <div class="flex flex-col my-10 w-1/12 ml-auto">
@@ -237,7 +239,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{asset('js/scriptHome.js')}}"></script>
 </body>

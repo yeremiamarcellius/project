@@ -54,22 +54,18 @@
                 <h1 class="text-xl text-center text-white m-0">LOGIN</h1>
                 <form action="{{route('login')}}" class=" space-y-4" method="POST">
                     @csrf
-
                     <input type="text" name="team_name" placeholder="Team Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error('team_name') is-invalid @enderror" required>
-                
                     <input type="password" name="password" placeholder="Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error('password') is-invalid @enderror" required>
-                    
-                  
                     <div class="space-x-2 pl-2 flex flex-row items-center">
                         <input type="checkbox" class="checked:bg-blue-600 checked:border-transparent" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label for="remember-me" class="text-white">Remember Me</label>
                     </div>
                     @if (session('error'))
                         <div class="alert alert-danger text-red-400">{{ session('error') }}</div>
-                         @endif
+                    @endif
                     <p class="text-white">Not yet have an account? <a href="{{route('register')}}" class="text-yellow-200">Click here</a></p>
                     <div class="flex justify-center">
-                        <button type="submit" class="w-2/3 sm:w-1/2 h-9 bg-blue-700 active:bg-blue-700 text-white rounded-md mx-auto">Submit</button>
+                        <button type="submit" class="focus:outline-none w-2/3 sm:w-1/2 h-9 bg-ocean active:bg-blue-700 text-white rounded-md mx-auto">Submit</button>
                     </div>
                 </form>
             </div>

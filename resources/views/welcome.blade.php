@@ -157,8 +157,8 @@
                 <p>Bila memenangkan kompetisi ini akan mendapatkan uang dan sertifikat dengan rincian:
                     <ul>
                         <li class="pl-2">A. Juara 1 mendapat uang senilai Rp 4.000.000 + Sertifikat</li>
-                        <li class="pl-2">B. Paket 2:Juara 2 mendapat uang senilai Rp 2.000.000 + Sertifikat</li>
-                        <li class="pl-2">C. Paket 3: Juara 3 mendapat uang senilai Rp 1.000.000 + Sertifikat</li>
+                        <li class="pl-2">B. Juara 2 mendapat uang senilai Rp 2.000.000 + Sertifikat</li>
+                        <li class="pl-2">C. Juara 3 mendapat uang senilai Rp 1.000.000 + Sertifikat</li>
                     </ul>
                 </p>
             </div>
@@ -334,7 +334,7 @@
                 @endif
 
                 @if ($message = Session::get('success'))
-                <div class="alert alert-danger">
+                <div class="alert-success">
                     <button type="button" class="close" data-dismiss="alert">x</button>
                     <strong>{{$message}}</strong>
                 </div>

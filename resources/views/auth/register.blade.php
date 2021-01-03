@@ -62,8 +62,18 @@
                 <form action="{{route('register')}}" name="form-register" id="register-forms" method="POST"  enctype = "multipart/form-data">
                     @csrf
                     <div id="team" class="space-y-4 mx-auto flex flex-col">
-                        <input type="text" name="team_name" placeholder="Group Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="password" name="password" placeholder="Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required id="password"/>
+                        <input type="text" name="team_name" placeholder="Group Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("team_name") is-invalid @enderror" required/>
+                        @error('team_name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                        <input type="password" name="password" placeholder="Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("password") is-invalid @enderror" required id="password"/>
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                         <div>
                             <input type="checkbox" onclick="showPass()"> Show Password
                         </div>
@@ -73,7 +83,12 @@
                             <p id="number">Password must contain at least 1 number</p>
                             <p id="length">Password must be at least 8 characters</p>
                         </div>
-                        <input type="password" name="password_confirmation" placeholder="Confirmation Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required id="confirm"/>
+                        <input type="password" name="password_confirmation" placeholder="Confirmation Password" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("password_confirmation") is-invalid @enderror" required id="confirm"/>
+                        @error('password_confirmation')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                         <p class="hidden text-red-500" id="confirm-message">Passwords do not match!</p>
                         <div class="flex flex-row justify-around">
                             <div>
@@ -91,12 +106,42 @@
                     </div>
                     <div id="leader" class="space-y-4 hidden">
                         <input type="text" name="full_name" placeholder="Full Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="email" name="email_leader" placeholder="Email" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="text" name="wa_num" placeholder="Whatsapp Number" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="text" name="line_id" placeholder="LINE ID" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="text" name="github" placeholder="Github or Gitlab ID" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="text" name="birth_place" placeholder="Birth Place" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="date" name="birth_day" placeholder="Birth Date" class="bg-transparent fill-current stroke-current rounded-md px-1 text-gray-400 border-2 border-white w-full" required/>
+                        <input type="email" name="email_leader" placeholder="Email" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("email_leader") is-invalid @enderror" required/>
+                        @error('email_leader')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                        <input type="text" name="wa_num" placeholder="Whatsapp Number" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("wa_num") is-invalid @enderror" required/>
+                        @error('wa_num')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                        <input type="text" name="line_id" placeholder="LINE ID" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("line_id") is-invalid @enderror" required/>
+                        @error('line_id')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                        <input type="text" name="github" placeholder="Github or Gitlab ID" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("github") is-invalid @enderror" required/>
+                        @error('github')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                        <input type="text" name="birth_place" placeholder="Birth Place" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("birth_place") is-invalid @enderror" required/>
+                        @error('birth_place')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                        <input type="date" name="birth_day" placeholder="Birth Date" class="bg-transparent fill-current stroke-current rounded-md px-1 text-gray-400 border-2 border-white w-full @error("birth_day") is-invalid @enderror" required/>
+                        @error('birth_day')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                         <div class="bg-transparent rounded-md px-1 text-gray-400 border-2 border-white w-full">
                         <div id="choose" class="text-gray-400">Upload ID Card</div><input type="file" id="card" name="card" accept="image/png, image/jpeg, image/jpg, image/pdf" class="idCard text-gray-400 flex justify-center mb-2"/></div>
                         <div class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full">

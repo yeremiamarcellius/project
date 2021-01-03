@@ -29,11 +29,11 @@
         <h1 class="text-white font-bold mt-32 text-center text-3xl sm:text-4xl md:text-5xl">Dashboard</h1>
         <hr class="bg-white w-4/5 lg:w-1/2 mt-8">
         <h1 class="text-white font-bold mt-4 text-center text-3xl sm:text-4xl md:text-5xl">Payment Confirmation</h1>
-        <div class="w-full flex flex-row flex-wrap">
+        <div class="w-full flex flex-row mx-auto flex-wrap">
             <!-- Card Container -->
             @foreach ($users as $user)
             @if ($user->type != 'admin' && $user->payment != NULL)
-            <div class="w-full md:w-1/2 xl:w-80 2xl:w-96 p-0 mt-8 md:py-2 lg:py-4">
+            <div class="w-full mr-4 md:w-1/2 xl:w-80 2xl:w-96 p-0 mt-2 md:py-2 lg:py-4">
                 <div class="payment-status-content w-full flex flex-row rounded-xl bg-purples hover:bg-purple-900 p-8">
                     <div class="w-3/4 mr-4 flex flex-col justify-center">
                         <h1 class="text-white font-semibold text-xl text-center tracking-widest">{{$user->team_name}}</h1>
@@ -41,10 +41,12 @@
                         <div class="flex flex-row mt-2">
                             <div class="text-white text-base font-semibold text-left w-14">Price</div>
                             <div class="text-white text-base mr-1 font-semibold text-left ">:</div>
-                            @if($user->type == 'binusian')
+                            @if($user->type == 'binusian' && $user->early == NULL)
                             <div class="text-white text-base font-semibold text-left w-24">Rp.80.000,00</div>
-                            @elseif($user->type == 'non-binusian')
+                            @elseif($user->type == 'non-binusian' && $user->early == NULL)
                             <div class="text-white text-base font-semibold text-left w-24">Rp.100.000,00</div>
+                            @elseif($user->early == 'early')
+                            <div class="text-white text-base font-semibold text-left w-24">Rp.60.000,00</div>
                             @endif
                         </div>
                         <div class="flex flex-row mt-1">

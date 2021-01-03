@@ -51,10 +51,12 @@
                 <div class="flex flex-col text-center w-24 mx-6 h-16">
                     @if (Auth::user()->type == 'non-binusian')
                     <p class="border-b text-sm pb-1">Non-Binusian</p>
-                    <p class="my-auto">Rp. 100.000</p>
+                    <p class="my-auto hidden" id="normal">Rp100.000</p>
+                    <p class="my-auto " id="early-bird">Rp60.000</p>
                     @elseif (Auth::user()->type == 'binusian')
                     <p class="border-b text-sm pb-1">Binusian</p>
-                    <p class="my-auto">Rp. 80.000</p>
+                    <p class="my-auto hidden" id="normal">Rp80.000</p>
+                    <p class="my-auto " id="early-bird">Rp60.000</p>
                     @endif
                 </div>
                 <div class="flex flex-col text-center w-24 mx-6 h-16">
@@ -84,10 +86,12 @@
                 <div class="flex flex-col text-center w-24 mx-6 h-16">
                     @if(Auth::user()->type == 'non-binusian')
                     <p class="border-b text-sm pb-1 font-semibold">Non-Binusian</p>
-                    <p class="my-auto">Rp100.000</p>
+                    <p class="my-auto hidden" id="normal">Rp100.000</p>
+                    <p class="my-auto" id="early-bird">Rp60.000</p>
                     @elseif (Auth::user()->type == 'binusian')
                     <p class="border-b text-lg pb-1 font-semibold">Binusian</p>
-                    <p class="my-auto">Rp80.000</p>
+                    <p class="my-auto hidden" id="normal">Rp80.000</p>
+                    <p class="my-auto" id="early-bird">Rp60.000</p>
                     @endif
                 </div>
                 <div class="flex flex-col">
@@ -96,6 +100,8 @@
                         <form action="{{route('payment')}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('PATCH')
+                            <!-- buat BE -->
+                        <input type="text" name="early" value="early" id="buatBE" class="hidden"/>
                         <input type="file" id="card" name="payment" accept="image/png, image/jpeg, image/jpg, image/pdf" class="w-11/12 sm:w-4/6 sm:h-1/2 text-xs ml-3 mb-2 rounded-full w-full"/>
                     </button>
                     <div class="flex w-9/12 flex-col">
@@ -110,7 +116,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{asset('js/scriptPayment.js') }}"></script>
     <script>
-            var countDownDate = new Date("Jan 28, 2021 15:37:25").getTime();
+            var countDownDate = new Date("Jan 1, 2022 19:46:25").getTime();
             var x = setInterval(function () {
                 var now = new Date().getTime();
                 var distance = countDownDate - now;
@@ -119,11 +125,15 @@
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 
-                document.getElementById("time").innerHTML = "Time Remaining: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+                document.getElementById("time").innerHTML = "Time Remaining: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s" ;
+                                                            
 
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("time").innerHTML = "EXPIRED";
+                    document.getElementById("time").innerHTML = "Early Bird Has Expired";
+                    document.getElementById("normal").style.display = "block";
+                    document.getElementById("early-bird").style.display = "none";
+                    document.getElementById("buatBE").value = "";  
                 }
             }, 1000);
     </script>

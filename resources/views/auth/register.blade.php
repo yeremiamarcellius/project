@@ -62,7 +62,7 @@
                 <form action="{{route('register')}}" name="form-register" id="register-forms" method="POST"  enctype = "multipart/form-data">
                     @csrf
                     <div id="team" class="space-y-4 mx-auto flex flex-col">
-                        <input type="text" name="team_name" placeholder="Group Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("team_name") is-invalid @enderror" required/>
+                        <input type="text" name="team_name" value="{{old('team_name')}}" placeholder="Group Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("team_name") is-invalid @enderror" required/>
                         @error('team_name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -105,38 +105,38 @@
                         </div>
                     </div>
                     <div id="leader" class="space-y-4 hidden">
-                        <input type="text" name="full_name" placeholder="Full Name" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
-                        <input type="email" name="email_leader" placeholder="Email" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("email_leader") is-invalid @enderror" required/>
+                        <input type="text" name="full_name" placeholder="Full Name" value="{{old('full_name')}}" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full" required/>
+                        <input type="email" name="email_leader" placeholder="Email" value="{{old('email_leader')}}" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("email_leader") is-invalid @enderror" required/>
                         @error('email_leader')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                        <input type="text" name="wa_num" placeholder="Whatsapp Number" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("wa_num") is-invalid @enderror" required/>
+                        <input type="text" name="wa_num" placeholder="Whatsapp Number" value="{{old('wa_num')}}" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("wa_num") is-invalid @enderror" required/>
                         @error('wa_num')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                        <input type="text" name="line_id" placeholder="LINE ID" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("line_id") is-invalid @enderror" required/>
+                        <input type="text" name="line_id" placeholder="LINE ID" value="{{old('line_id')}}" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("line_id") is-invalid @enderror" required/>
                         @error('line_id')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                        <input type="text" name="github" placeholder="Github or Gitlab ID" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("github") is-invalid @enderror" required/>
+                        <input type="text" name="github" placeholder="Github or Gitlab ID" value="{{old('github')}}" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("github") is-invalid @enderror" required/>
                         @error('github')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                        <input type="text" name="birth_place" placeholder="Birth Place" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("birth_place") is-invalid @enderror" required/>
+                        <input type="text" name="birth_place" placeholder="Birth Place" value="{{old('birth_place')}}" class="bg-transparent rounded-md px-1 text-white border-2 border-white w-full @error("birth_place") is-invalid @enderror" required/>
                         @error('birth_place')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                        <input type="date" name="birth_day" placeholder="Birth Date" class="bg-transparent fill-current stroke-current rounded-md px-1 text-gray-400 border-2 border-white w-full @error("birth_day") is-invalid @enderror" required/>
+                        <input type="date" name="birth_day" placeholder="Birth Date" value="{{old('birth_day')}}" class="bg-transparent fill-current stroke-current rounded-md px-1 text-gray-400 border-2 border-white w-full @error("birth_day") is-invalid @enderror" required/>
                         @error('birth_day')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>

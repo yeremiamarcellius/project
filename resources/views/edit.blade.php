@@ -40,15 +40,30 @@
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Email</label>
-                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="email_leader" value="{{$user->email_leader}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8 @error("email_leader") is-invalid @enderror" name="email_leader" value="{{$user->email_leader}}"></input>
+                        @error('email_leader')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Whatsapp Number</label>
-                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="wa_num" value="{{$user->wa_num}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8 @error("wa_num") is-invalid @enderror" name="wa_num" value="{{$user->wa_num}}"></input>
+                        @error('wa_num')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Line ID</label>
-                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8" name="line_id" value="{{$user->line_id}}"></input>
+                        <input class="pl-2 w-full text-white text-base font-light ml-2 rounded-lg border-white bg-transparent border-2 h-8 @error("line_id") is-invalid @enderror" name="line_id" value="{{$user->line_id}}"></input>
+                        @error('line_id')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="w-full">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">GitHub or Gitlub ID</label>

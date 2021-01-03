@@ -127,7 +127,7 @@ password.onkeyup = function () {
 }
 
 var confirmPass = document.getElementById("confirm");
-confirmPass.onfocus = function () {
+confirmPass.oninput = function () {
     if (confirmPass.value != password.value) {
         document.getElementById("confirm-message").style.display = "block";
     }

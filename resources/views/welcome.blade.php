@@ -122,20 +122,20 @@
                 <h1 class="ml-4 my-2">Apa itu Hackathon 4.0?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
-            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="zxcv">Hackathon 3.0 adalah event Hackathon ke-3 yang akan diadakan oleh BNCC. Di event ini, peserta akan ditantang untuk menyelesaikan case-case yang berhubungan dengan dunia IT dalam waktu 48 jam dalam bentuk website atau aplikasi.</p>
+            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="zxcv">Hackathon 4.0 adalah event Hackathon ke-4 yang akan diadakan oleh BNCC. Di event ini, peserta akan ditantang untuk menyelesaikan case-case yang berhubungan dengan dunia IT dalam waktu 48 jam dalam bentuk website atau aplikasi.</p>
             <!-- Q2 -->
             <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show1()">
                 <h1 class="mx-4 my-2">Apakah Hackathon 4.0 akan diadakan secara online?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
-            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="asdf">Ya, Hackathon 3.0 ini akan diadakan full secara online.</p>
+            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="asdf">Ya, Hackathon 4.0 ini akan diadakan full secara online.</p>
             <!-- Q3 -->
             <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show2()">
                 <h1 class="mx-4 my-2">Apakah Hackathon 4.0 dipungut biaya?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
             <div class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="long0">
-                <p>Event Hackathon 3.0 ini dipungut biaya dan memiliki 3 paket:</p>
+                <p>Event Hackathon 4.0 ini dipungut biaya dan memiliki 3 paket:</p>
                 <ul>
                     <li class="pl-2">A. Paket 1: Early Bird (24 September - 15 September 2020) dikenakan biaya Rp 60.000/ tim</li>
                     <li class="pl-2">B. Paket 2: Normal Price Binusian (16 September - 3 Oktober 2020) dikenakan biaya Rp 80.000/ tim</li>
@@ -156,9 +156,9 @@
             <div class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="long1">
                 <p>Bila memenangkan kompetisi ini akan mendapatkan uang dan sertifikat dengan rincian:
                     <ul>
-                        <li class="pl-2">A. Juara 1 mendapat uang senilai Rp 4.000.000 + Sertifikat</li>
-                        <li class="pl-2">B. Juara 2 mendapat uang senilai Rp 2.000.000 + Sertifikat</li>
-                        <li class="pl-2">C. Juara 3 mendapat uang senilai Rp 1.000.000 + Sertifikat</li>
+                        <li class="pl-2">A. Juara 1 mendapat uang senilai Rp 10.000.000 + Sertifikat</li>
+                        <li class="pl-2">B. Juara 2 mendapat uang senilai Rp 8.000.000 + Sertifikat</li>
+                        <li class="pl-2">C. Juara 3 mendapat uang senilai Rp 5.000.000 + Sertifikat</li>
                     </ul>
                 </p>
             </div>
@@ -167,7 +167,7 @@
                 <h1 class="mx-4 my-2">Apa saja persyaratan untuk menjadi peserta dalam Hackathon 4.0 ini?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg></div>
             </div></button>
-            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text1">Untuk mengikuti Hackathon 3.0 ini, peserta dapat tim yang maksimal terdiri dari 3-4 orang dengan rentang usia 18-25 tahun. Setiap peserta diwajibkan untuk mengirimkan CV pada dashboard masing-masing tim. Setiap tim juga diwajibkan sudah melakukan pembayaran biaya lomba bila berminat mengikuti Hackathon 3.0 ini.</p>
+            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text1">Untuk mengikuti Hackathon 4.0 ini, peserta dapat tim yang maksimal terdiri dari 3-4 orang dengan rentang usia 18-25 tahun. Setiap peserta diwajibkan untuk mengirimkan CV pada dashboard masing-masing tim. Setiap tim juga diwajibkan sudah melakukan pembayaran biaya lomba bila berminat mengikuti Hackathon 4.0 ini.</p>
             <!-- Q7 -->
             <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex text-left" onclick="show6()">
                 <h1 class="mx-4 my-2">Apakah peserta diwajibkan untuk membentuk tim saat mengikuti Hackathon 4.0?</h1>
@@ -199,11 +199,11 @@
             </div></button>
             <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text6">Menyiapkan source code sebelum event dimulai, melanjutkan dan melombakan lagi project yang pernah dibuat merupakan pelanggaran. Apabila peserta terbukti melakukan pelanggaran maka akan didiskualifikasi.</p>
             <!-- Q12 -->
-            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-b-2 border-gradient-right flex  text-left" onclick="show11()">
+            <button class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none"><div class="border-t-2 border-gradient-right flex  text-left" onclick="show11()">
                 <h1 class="mx-4 my-2">Bila saya tidak memiliki basic coding maupun design, apakah saya masih boleh ikut?</h1>
                 <div class="mt-3 ml-auto mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"> <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/> </svg></div>
             </div></button>
-            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text7">Peserta yang tidak memiliki basic coding tetap diperbolehkan mengikuti Hackathon 3.0. Namun, nantinya akan ada seleksi untuk menentukan tim mana yang bisa berpartisipasi di hari H Hackathon.</p>
+            <p class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="text7">Peserta yang tidak memiliki basic coding tetap diperbolehkan mengikuti Hackathon 4.0. Namun, nantinya akan ada seleksi untuk menentukan tim mana yang bisa berpartisipasi di hari H Hackathon.</p>
         </div>
     </section>
     <!-- Why Join Section -->
@@ -322,23 +322,6 @@
             </div>
             <div class="mt-8 bg-darkpurple w-full md:w-1/3 md:mr-6 lg:mr-8 flex flex-col justify-evenly py-8 md:py-0 px-8 rounded-xl o">
                 <h1 class="text-center text-white text-2xl lg:text-3xl xl:text-4xl font-bold">Contact Us</h1>
-                @if(count($errors)>0)
-                    <div class="alert alert-danger">
-                        <button type="button" class="close" data-dismiss="alert">x</button>
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{$error}}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-
-                @if ($message = Session::get('success'))
-                <div class="alert-success">
-                    <button type="button" class="close" data-dismiss="alert">x</button>
-                    <strong>{{$message}}</strong>
-                </div>
-                @endif
                 <form method="post" action="{{route('send')}}"class="flex flex-col items-center justify-center content-between space-y-6 md:space-y-8">
                     @csrf
                     <input class="text-white focus:outline-none w-full placeholder-white bg-transparent border-white border-b-2" type="text" name="name" placeholder="Name" required>

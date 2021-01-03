@@ -42,6 +42,7 @@ class HomeController extends Controller
 
         Auth::user()->update([
             'payment' => $fileNameToStore,
+            'early' => $request->early
         ]);
         
         return back();

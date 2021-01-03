@@ -106,17 +106,19 @@ body {
 }
 
 .purples{
-    background: #3c2e63;   
+    background: #3c2e63;
+    
 }
-.close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    padding: 0.75rem 1.25rem;
-    color: inherit;
+
+.is-invalid{
+    border-color: #db3f39;
+}
+
+.invalid-feedback {
+    /* display: none; */
+    width: 100%;
+    margin-top: 0.15rem;
+    font-size: 80%;
+    color: #db3f39;
   }
-.alert-success{
-    color: #43df84;
-}
   

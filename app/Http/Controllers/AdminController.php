@@ -30,6 +30,12 @@ class AdminController extends Controller
     }
 
     public function store(Request $request, $id){
+        $request->validate([
+            'email_leader' => 'unique:users,email_leader,' . $id,
+            'wa_num' => 'unique:users,wa_num,' . $id,
+            'line_id' => 'unique:users,line_id,' . $id
+        ]);
+        
         User::FindOrFail($id)->update([
             'email_leader' => $request->email_leader,
             'fullname' => $request->full_name,

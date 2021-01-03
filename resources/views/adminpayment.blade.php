@@ -28,7 +28,7 @@
             <!-- Card Container -->
             @foreach ($users as $user)
             @if ($user->type != 'admin')
-            <div class="delete-pop-up-card w-full sm:w-1/2 xl:w-80 2xl:w-96 p-0 mt-8 md:p-4 lg:p-8">
+            <div class="delete-pop-up-card w-full sm:w-1/2 xl:w-80 2xl:w-96 p-0 mt-4 md:p-4 lg:p-8">
                 <!-- Card -->
                 <div class="w-full flex flex-row rounded-xl bg-purples hover:bg-purple-900 p-8">
                     <div class="w-full flex flex-col justify-center">
@@ -51,8 +51,8 @@
                                         <p class="text-center font-semibold text-white text-sm">Delete Participant?</p>
                                     </div> 
                                     <div class="flex justify-center px-4 pt-4 space-x-2">
-                                         <a class="focus:outline-none cancel-btn transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-ocean text-white text-sm p-2">Cancel</a> 
-                                         <button type="submit" class="focus:outline-none  transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Delete</button>
+                                            <a class="focus:outline-none cancel-btn transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-ocean text-white text-sm p-2">Cancel</a> 
+                                            <button type="submit" class="focus:outline-none  transform hover:scale-110 motion-reduce:transform-none rounded-xl font-semibold bg-purples text-white text-sm p-2">Delete</button>
                                     </div>
                                 </div>
                             </form>

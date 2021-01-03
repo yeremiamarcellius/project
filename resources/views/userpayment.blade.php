@@ -53,7 +53,7 @@
                     <p class="border-b text-sm pb-1">Non-Binusian</p>
                     <p class="my-auto">Rp. 100.000</p>
                     @elseif (Auth::user()->type == 'binusian')
-                    <p class="hidden border-b text-sm pb-1">Binusian</p>
+                    <p class="border-b text-sm pb-1">Binusian</p>
                     <p class="my-auto">Rp. 80.000</p>
                     @endif
                 </div>

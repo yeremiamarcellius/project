@@ -69,7 +69,7 @@
                         <!-- View ID -->
                         <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
                             <div class="flex flex-col justify-center items-center">
-                                <h1 class="text-center font-semibold text-3xl text-white tracking-widest">ID Card</h1>
+                                <h1 class="text-center font-semibold text-3xl text-white tracking-widest">CV</h1>
                                 <hr class="w-2/3 my-6 mx-auto">
                                 <img class="max-w-96 rounded-xl" src="{{asset('storage/cv/'.$user->cv)}}" alt="viewphoto.jpg">
                             </div>

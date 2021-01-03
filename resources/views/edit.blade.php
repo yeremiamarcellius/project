@@ -65,7 +65,7 @@
                     <div class="w-full flex flex-col">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload CV</label>
                         <div class="w-full flex flex-row">
-                            <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$user->cv}}"></input>
+                            <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" readonly value="{{$user->cv}}"></input>
                             <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                             <!-- View ID -->
                             <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -80,7 +80,7 @@
                     <div class="w-full flex flex-col">
                         <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload ID Card</label>
                         <div class="w-full flex flex-row">
-                            <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$user->card}}"></input>
+                            <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" readonly value="{{$user->card}}"></input>
                             <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                             <!-- View ID -->
                             <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="mx-auto w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Submit</button>
+                    <button type="submit" class="mx-auto w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Update</button>
                 </div>
             </form>
             <!-- Container Member -->
@@ -134,7 +134,7 @@
                         <div class="w-full flex flex-col">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload CV</label>
                             <div class="w-full flex flex-row">
-                                <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$member->cv}}"></input>
+                                <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" readonly value="{{$member->cv}}"></input>
                                 <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                                 <!-- View ID -->
                                 <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -149,7 +149,7 @@
                         <div class="w-full flex flex-col">
                             <label class="ml-2 mt-2 font-dust text-sm font-semibold">Upload ID Card</label>
                             <div class="w-full flex flex-row">
-                                <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" value="{{$member->card}}"></input>
+                                <input class="pl-2 w-4/5 text-white text-base font-light ml-2 rounded-lg border-white flex justify-between bg-transparent border-2 h-8" readonly value="{{$member->card}}"></input>
                                 <button class="image-btn ml-4 transform hover:scale-110 motion-reduce:transform-none focus:outline-none mr-2 h-full"><img class="m-0 h-8" src="/images/svgs/view-toggle.svg" alt=""></button>
                                 <!-- View ID -->
                                 <div class="image-pop-up hidden shadow-inner fixed sm:max-w-80 transform -translate-y-1/2 -translate-x-1/2 z-50 py-4 px-8 bg-purples rounded-xl top-1/2 left-1/2">
@@ -161,7 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="mx-auto pl-2 w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Submit</button>
+                        <button type="submit" class="mx-auto pl-2 w-40 sm:w-60 bg-purples transform hover:scale-110 motion-reduce:transform-none focus:outline-none mt-6 rounded-lg text-white text-xl py-1 text-semibold">Update</button>
                     </div>
                 </form>
             @endforeach

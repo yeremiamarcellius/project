@@ -137,9 +137,9 @@
             <div class="pt-4 mx-6 sm:mx-10 mb-4" style="display: none;" id="long0">
                 <p>Event Hackathon 4.0 ini dipungut biaya dan memiliki 3 paket:</p>
                 <ul>
-                    <li class="pl-2">A. Paket 1: Early Bird (24 September - 15 September 2020) dikenakan biaya Rp 60.000/ tim</li>
-                    <li class="pl-2">B. Paket 2: Normal Price Binusian (16 September - 3 Oktober 2020) dikenakan biaya Rp 80.000/ tim</li>
-                    <li class="pl-2">C. Paket 3: Normal Price Umum (16 September - 3 Oktober 2020) dikenakan biaya Rp. 100.000/ tim</li>
+                    <li class="pl-2">A. Paket 1: Early Bird (24 September - 15 September 2021) dikenakan biaya Rp 60.000/ tim</li>
+                    <li class="pl-2">B. Paket 2: Normal Price Binusian (16 September - 3 Oktober 2021) dikenakan biaya Rp 80.000/ tim</li>
+                    <li class="pl-2">C. Paket 3: Normal Price Umum (16 September - 3 Oktober 2021) dikenakan biaya Rp. 100.000/ tim</li>
                 </ul>
             </div>
             <!-- Q4 -->

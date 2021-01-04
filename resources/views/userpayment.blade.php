@@ -29,7 +29,7 @@
         <div class="w-full flex flex-col mt-10 justify-center items-center content-center">
             <div class="flex flex-col items-center justify-center">
                 <button class="toggle-btn focus:outline-none w-full sm:w-2/3 lg:w-1/2 flex justify-center"><img class="w-full" src="/images/svgs/payment-1-a.svg" alt="payment.svg"></button>
-                <img class="toggle-content hidden w-full sm:w-2/3 lg:w-1/2" src="/images/svgs/payment-2.svg" alt="payment.svg">
+                <img class="toggle-content hidden w-full sm:w-2/3 lg:w-1/2" src="/images/svgs/Group 163.svg" alt="payment.svg">
             </div>
             <div class="flex flex-col items-center justify-center">
                 <button class="toggle-btn focus:outline-none w-full sm:w-2/3 lg:w-1/2 flex justify-center"><img class="w-full" src="/images/svgs/payment5.svg" alt="payment.svg"></button>
@@ -41,7 +41,7 @@
             </div>
             <div class="flex flex-col items-center justify-center">
                 <button class="toggle-btn focus:outline-none w-full sm:w-2/3 lg:w-1/2 flex justify-center"><img class="w-full" src="/images/svgs/payment-7.svg" alt="payment.svg"></button>
-                <img class="toggle-content hidden w-full sm:w-2/3 lg:w-1/2" src="/images/svgs/payment-8.svg" alt="payment.svg">
+                <img class="toggle-content hidden w-full sm:w-2/3 lg:w-1/2" src="/images/svgs/Group 163-2.svg" alt="payment.svg">
             </div>
         <!-- non binusian -->
         @if(Auth::user()->payment != NULL)
@@ -116,7 +116,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{asset('js/scriptPayment.js') }}"></script>
     <script>
-            var countDownDate = new Date("Jan 1, 2022 19:46:25").getTime();
+            var countDownDate = new Date("Sep 15, 2021 23:59:59").getTime();
             var x = setInterval(function () {
                 var now = new Date().getTime();
                 var distance = countDownDate - now;

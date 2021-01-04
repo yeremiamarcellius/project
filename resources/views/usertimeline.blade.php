@@ -24,12 +24,12 @@
         <h1 class="text-white font-bold text-center text-3xl sm:text-4xl md:text-5xl">TIMELINE</h1>
         <hr class="bg-white w-4/5 mb-16 lg:w-1/2 mt-8">
         <div class="flex flex-col items-center justify-evenly md:flex-row w-full">
-            <img class="w-4/5 my-4 md:mr-4 md:w-1/2 lg:w-1/4" src="/images/svgs/user-open.svg" alt="timeline.svg">
-            <img class="w-4/5 my-4 md:ml-4 md:w-1/2 lg:w-1/4" src="/images/svgs/user-close.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:mr-4 md:w-1/2 lg:w-1/4" src="/images/svgs/Group 166.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:ml-4 md:w-1/2 lg:w-1/4" src="/images/svgs/Group 145.svg" alt="timeline.svg">
         </div>
         <div class="flex flex-col items-center justify-evenly md:flex-row w-full">
-            <img class="w-4/5 my-4 md:mr-4 md:w-1/2 lg:w-1/4" src="/images/svgs/user-tm.svg" alt="timeline.svg">
-            <img class="w-4/5 my-4 md:ml-4 md:w-1/2 lg:w-1/4" src="/images/svgs/user-compt.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:mr-4 md:w-1/2 lg:w-1/4" src="/images/svgs/Group 147.svg" alt="timeline.svg">
+            <img class="w-4/5 my-4 md:ml-4 md:w-1/2 lg:w-1/4" src="/images/svgs/Group 149.svg" alt="timeline.svg">
         </div>
     </section>
 </body>

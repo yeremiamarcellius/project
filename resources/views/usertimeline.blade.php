@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav class="flex z-50 flex-row bg-gradient-to-b fixed top-0 from-purple-600 bg-opacity-50 justify-between w-full">
-        <img src="/images/ehackathon_logo_1.png" alt="" class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none ml-0 sm:ml-4 md:ml-8" height="100px" width="100px"/>
+    <a href="{{route('userdashboard')}}"> <img src="/images/ehackathon_logo_1.png" alt="" class="transform hover:scale-110 motion-reduce:transform-none ml-0 sm:ml-4 md:ml-8" height="100px" width="100px" /></a>
         <div class="bg-ocean flex flex-row justify-around p-2 rounded-bl-3xl w-60 xl:w-80 h-1/2">
             <a class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('home')}}"><img height="50px" width="50px" src="/images/svgs/nav-home.svg" alt="nav.svg"></a>
             <a class="focus:outline-none transform hover:scale-110 motion-reduce:transform-none flex justify-center items-center" href="{{route('homepayment')}}"><img height="50px" width="50px" src="/images/svgs/nav-payment.svg" alt="nav.svg"></a>

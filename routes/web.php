@@ -19,6 +19,9 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::group(['middleware'=>'user','auth'] ,function(){
+Route::get('/user/home', function(){
+    return view('userdashboard');
+})->name('userdashboard');
 Route::patch('/home/uploadpayment', 'HomeController@payment')->name('payment');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home/payment' , function(){
@@ -45,7 +48,10 @@ Route::delete('/admin/delete/{id}', 'AdminController@destroy')->name('admin-dele
 Route::get('/admin/edit/{id}', 'AdminController@edit')->name('admin-edit');
 Route::patch('/admin/update/{id}', 'AdminController@store')->name('admin-update');
 Route::patch('/admin/updatemember/{id}', 'AdminController@storemember')->name('admin-updatemember');
-Route::patch('admin/approve/{id}', 'AdminController@approve')->name('admin-approve');
-Route::patch('admin/reject/{id}', 'AdminController@reject')->name('admin-reject');
+Route::patch('/admin/approve/{id}', 'AdminController@approve')->name('admin-approve');
+Route::patch('/admin/reject/{id}', 'AdminController@reject')->name('admin-reject');
+Route::get('/admin/home', function(){
+    return view('admindashboard');
+})->name('admindashboard');
 });
 Route::post('/sendemail/send', 'SendEmailController@send')->name('send');
